@@ -1,0 +1,1103 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "oneOf": [
+    {
+      "$ref": "#/components/schemas/ept"
+    },
+    {
+      "type": "array",
+      "items": {
+        "$ref": "#/components/schemas/ept"
+      }
+    }
+  ],
+  "components": {
+    "schemas": {
+      "currency": {
+        "type": "string",
+        "enum": [
+          "AED",
+          "AFN",
+          "ALL",
+          "AMD",
+          "ANG",
+          "AOA",
+          "ARS",
+          "AUD",
+          "AWG",
+          "AZN",
+          "BAM",
+          "BBD",
+          "BDT",
+          "BGN",
+          "BHD",
+          "BIF",
+          "BMD",
+          "BND",
+          "BOB",
+          "BOV",
+          "BRL",
+          "BSD",
+          "BTN",
+          "BWP",
+          "BYN",
+          "BZD",
+          "CAD",
+          "CDF",
+          "CHE",
+          "CHF",
+          "CHW",
+          "CLF",
+          "CLP",
+          "CNY",
+          "COP",
+          "COU",
+          "CRC",
+          "CUC",
+          "CUP",
+          "CVE",
+          "CZK",
+          "DJF",
+          "DKK",
+          "DOP",
+          "DZD",
+          "EGP",
+          "ERN",
+          "ETB",
+          "EUR",
+          "FJD",
+          "FKP",
+          "GBP",
+          "GEL",
+          "GHS",
+          "GIP",
+          "GMD",
+          "GNF",
+          "GTQ",
+          "GYD",
+          "HKD",
+          "HNL",
+          "HRK",
+          "HTG",
+          "HUF",
+          "IDR",
+          "ILS",
+          "INR",
+          "IQD",
+          "IRR",
+          "ISK",
+          "JMD",
+          "JOD",
+          "JPY",
+          "KES",
+          "KGS",
+          "KHR",
+          "KMF",
+          "KPW",
+          "KRW",
+          "KWD",
+          "KYD",
+          "KZT",
+          "LAK",
+          "LBP",
+          "LKR",
+          "LRD",
+          "LSL",
+          "LYD",
+          "MAD",
+          "MDL",
+          "MGA",
+          "MKD",
+          "MMK",
+          "MNT",
+          "MOP",
+          "MRU",
+          "MUR",
+          "MVR",
+          "MWK",
+          "MXN",
+          "MXV",
+          "MYR",
+          "MZN",
+          "NAD",
+          "NGN",
+          "NIO",
+          "NOK",
+          "NPR",
+          "NZD",
+          "OMR",
+          "PAB",
+          "PEN",
+          "PGK",
+          "PHP",
+          "PKR",
+          "PLN",
+          "PYG",
+          "QAR",
+          "RON",
+          "RSD",
+          "RUB",
+          "RWF",
+          "SAR",
+          "SBD",
+          "SCR",
+          "SDG",
+          "SEK",
+          "SGD",
+          "SHP",
+          "SLL",
+          "SOS",
+          "SRD",
+          "SSP",
+          "STN",
+          "SVC",
+          "SYP",
+          "SZL",
+          "THB",
+          "TJS",
+          "TMT",
+          "TND",
+          "TOP",
+          "TRY",
+          "TTD",
+          "TWD",
+          "TZS",
+          "UAH",
+          "UGX",
+          "USD",
+          "USN",
+          "UYI",
+          "UYU",
+          "UYW",
+          "UZS",
+          "VES",
+          "VND",
+          "VUV",
+          "WST",
+          "XAF",
+          "XAG",
+          "XAU",
+          "XBA",
+          "XBB",
+          "XBC",
+          "XBD",
+          "XCD",
+          "XDR",
+          "XOF",
+          "XPD",
+          "XPF",
+          "XPT",
+          "XSU",
+          "XTS",
+          "XUA",
+          "XXX",
+          "YER",
+          "ZAR",
+          "ZMW",
+          "ZWL"
+        ]
+      },
+      "language": {
+        "type": "string",
+        "enum": [
+          "ara",
+          "ben",
+          "chi",
+          "zho",
+          "cze",
+          "ces",
+          "dan",
+          "dut",
+          "nld",
+          "eng",
+          "fin",
+          "fre",
+          "fra",
+          "ger",
+          "deu",
+          "gre",
+          "ell",
+          "heb",
+          "hin",
+          "hun",
+          "ice",
+          "isl",
+          "ita",
+          "jpn",
+          "kor",
+          "lat",
+          "nor",
+          "per",
+          "fas",
+          "pol",
+          "por",
+          "rum",
+          "ron",
+          "rus",
+          "san",
+          "srp",
+          "slo",
+          "slk",
+          "slv",
+          "spa",
+          "swe",
+          "tam",
+          "tel",
+          "tha",
+          "tur",
+          "ukr",
+          "urd",
+          "vie",
+          "wel",
+          "cym",
+          "yid"
+        ]
+      },
+      "ept": {
+        "type": "object",
+        "properties": {
+          "00001_EPT_Version": {
+            "description": "This field specifies the version of the template and is used by the recipient to understand the number of fields expected, their labelling and order.\r\nV21 indicates that the file supports both EU and UK KIDs\r\nV21UK indicates that the file supports a UK KID but not an EU KID\r\nV21 or V21UK",
+            "type": "string",
+            "enum": [
+              "V21",
+              "V21UK"
+            ]
+          },
+          "00002_EPT_Producer_Name": {
+            "description": "If the manufacturer has outsourced the production of  the EPT to another party responsible for the production and publication of the EPT data set, the party  should be identified in this field.\r\nThis field enables firms to report EPT on behalf of an Issuer/Manufacturer. This datapoint may be used by users who wish to exchange information about the producer of the file in case it is different from the manufacturer.\r\nAlphanum (max 255)",
+            "type": "string",
+            "maxLength": 255
+          },
+          "00004_EPT_Producer_Email": {
+            "description": "Contact point for distributors regarding EPT.\r\nAlphanum (max 255)",
+            "type": "string",
+            "maxLength": 255,
+            "format": "email"
+          },
+          "00005_File_Generation_Date_And_Time": {
+            "description": "Date and time of the creation of the EPT file.\r\nUniversal Time zone\r\nYYYY-MM-DD  hh:mm:ss       ISO 8601     (UTC+0)",
+            "type": "string",
+            "format": "date-time"
+          },
+          "00006_EPT_Data_Reporting_Narratives": {
+            "description": "Specifies if the Narratives section has been completed in the current EPT.\r\nIf set to \"N\" then disregard the \"mandatory\", \"conditional\" or \"optional\" specification of the corresponding sections and the corresponding fields must be empty. The narratives section is necessary in case the insurer produces its own KID according to art. 10(a) RTS or produces its own SID according to Art. 10(b) RTS.\r\nY/N",
+            "type": "string",
+            "enum": [
+              "Y",
+              "N"
+            ]
+          },
+          "00007_EPT_Data_Reporting_Costs": {
+            "description": "Specifies if the Costs section has been completed in the current EPT.\r\nIf set to \"N\" then disregard the \"mandatory\", \"conditional\" or \"optional\" specification of the corresponding sections and the corresponding fields must be empty.\r\nY/N",
+            "type": "string",
+            "enum": [
+              "Y",
+              "N"
+            ]
+          },
+          "00008_EPT_Data_Reporting_Additional_Requirements_German_MOPs": {
+            "description": "Specifies if the section \"Additional information required for German MOPs\" has been completed in the current EPT.\r\nIf set to \"N\" then disregard the \"mandatory\", \"conditional\" or \"optional\" specification of the corresponding sections and the corresponding fields must be empty. The section 06xxx is required for all products, e.g. funds, structured products, sold as underlying options within German MOPs. It contains parameters on products that insurers require to perform mandatory calculations  in order to fulfil the MOPs regulatory requirements in the German market\r\nY/N",
+            "type": "string",
+            "enum": [
+              "Y",
+              "N"
+            ]
+          },
+          "00009_EPT_Additional_Information_Structured_Products": {
+            "description": "Specifies if the section \"Additional information required for structured PRIIPs\" has been completed in the current EPT posting.\r\nIf set to \"N\" then disregard the \"mandatory\", \"conditional\" or \"optional\" specification of the corresponding sections and the corresponding fields must be empty.\r\nY/N",
+            "type": "string",
+            "enum": [
+              "Y",
+              "N"
+            ]
+          },
+          "00010_Portfolio_Manufacturer_Name": {
+            "description": "Name of the management company of the UCITS or AIF or the manufacturer of the structured product.\r\nConsistent with Article 4(4) PRIIPs Regulation.\r\nAlphanum (max 255)",
+            "type": "string",
+            "maxLength": 255
+          },
+          "00015_Portfolio_Manufacturer_Group_Name": {
+            "description": "Name of the group the PRIIPs manufacturer belongs to\r\nPRIIPs RTS Art. 1(1)(f) mandatory if provider is part of the group. \r\nSame name as the manufacturer should be filled in if there is no group.\r\nAlphanum (max 255)",
+            "type": "string",
+            "maxLength": 255
+          },
+          "00016_Portfolio_Manufacturer_LEI": {
+            "description": "Legal Entity Identifier, LEI of the manufacturer of the portfolio\r\nImportant for reference when feedback reporting takes place from distributors\r\nConsistent with MiFID.\r\nAlphanum(20) ISO 17442",
+            "type": "string",
+            "maxLength": 20,
+            "pattern": "^[ A-Za-z0-9]*$"
+          },
+          "00017_Portfolio_Manufacturer_Email": {
+            "description": "Contact  point for communication with the manufacturer to either provide feedback reporting or to retrieve details on how to provide feedback reporting.\r\nConsistent with MiFID\r\nAlphanum (max 255)",
+            "type": "string",
+            "maxLength": 255,
+            "format": "email"
+          },
+          "00020_Portfolio_Guarantor_Name": {
+            "description": "Name of guarantor of the financial instrument. i.e. the entity to which the end investor has counterparty risk\r\nRequired only if different from the issuer \r\nConsistent with MiFID and Solvency II approaches\r\nAlphanum (max 255)",
+            "type": "string",
+            "maxLength": 255
+          },
+          "00030_Portfolio_Identifying_Data": {
+            "description": "Identification of the  fund or share class or segregated account\r\nConsistent with MiFID and Solvency II approaches\r\nUse the following priority:\r\n  - ISO 6166 code of ISIN when available\r\n  - Other recognised codes (e.g.: CUSIP, Bloomberg Ticker, Reuters RIC)\r\n  - Code attributed by the undertaking, when the options above are not available. Code must be unique and kept consistent over time.",
+            "type": "string"
+          },
+          "00040_Type_Of_Identification_Code_For_The_Fund_Share_Or_Portfolio": {
+            "description": "Codification chosen to identify the share of the CIS\r\nConsistent with MiFID and  Solvency II   approaches\r\n In case the LEI is used then the type shall be \"9\".\r\nOne of the options in the following closed list to be used:\r\n1 - ISO 6166 for ISIN code\r\n2 - CUSIP (The Committee on Uniform Securities Identification Procedures number assigned by the CUSIP Service Bureau for U.S. and Canadian companies)\r\n3 - SEDOL (Stock Exchange Daily Official List for the London Stock Exchange)\r\n4 – WKN (Wertpapier Kenn-Nummer, the alphanumeric German identification number)\r\n5 - Bloomberg Ticker (Bloomberg letters code that identify a company's securities)\r\n6 - BBGID (The Bloomberg Global ID)\r\n7 - Reuters RIC (Reuters instrument code)\r\n8 – FIGI (Financial Instrument Global Identifier)\r\n9 - Other code by members of the Association of National Numbering Agencies\r\n99 - Code attributed by the undertaking",
+            "type": "number",
+            "enum": [
+              1,
+              2,
+              3,
+              4,
+              5,
+              6,
+              7,
+              8,
+              9,
+              99
+            ]
+          },
+          "00050_Portfolio_Name": {
+            "description": "Name of the portfolio or name of the CIS\r\nPortfolio or fund or share class name\r\nconsistent with MiFID and  Solvency II approach\r\nAlphanum (max 255)",
+            "type": "string",
+            "maxLength": 255
+          },
+          "00060_Portfolio_Or_Share_Class_Currency": {
+            "description": "Denomination currency of the share class in case the product has multiple share classes. Denomination currency of the product or portfolio in the other cases.\r\nCode ISO 4217",
+            "$ref": "#/components/schemas/currency"
+          },
+          "00070_PRIIPs_KID_Publication_Date": {
+            "description": "Date of the latest PRIIPs KID produced for the portfolio or share class.\r\nExcept for the UK data part 08xxx, data in the EPT should be consistent with the data presented in the last kid produced.\r\nIf there is an ad-hoc revision of the KID due to material changes, it should trigger an updated version of the EPT.\r\nYYYY-MM-DD         ISO 8601",
+            "type": "string",
+            "format": "date"
+          },
+          "00075_PRIIPs_KID_Web_Address": {
+            "description": "Direct link to the PRIIPs KID\r\nIt should directly link to the document and not to a generic site.\r\nstring",
+            "type": "string"
+          },
+          "00080_Portfolio_PRIIPs_Category": {
+            "description": "PRIIPs category of the portfolio\r\nPerformance & MRM calculation method, see Annex II, numbers 4-7\r\n1 to 4",
+            "type": "number",
+            "minimum": 1,
+            "maximum": 4
+          },
+          "00090_Fund_CIC_Code": {
+            "description": "CIC code - fund   (4 digits)\r\nThe CIC code of the share class of the fund, or the financial instrument, provided to assist insurance companies in the handling of PRIIPs KID production. It allows them to segregate equity, debt, money market, asset allocation, real estate funds.\r\nS.06.02 (old: Assets D1)  - Remark:  first two digits are expected to be XL ( not country code)",
+            "type": "string",
+            "pattern": "^XL[A-Za-z0-9]{2}$"
+          },
+          "00110_Is_An_Autocallable_Product": {
+            "description": "Indication of whether the product is an autocallable\r\nSeparate rules apply to autocallable structured products. This data point is only used in case the insurance company need to revamp the specific information.\r\n\r\nsee Annex V, Number 17 Template C: PRIIPs referred to in point 76c of Annex VI, Annex VI, number 76c, Annex VII, Table 1 for PRIIPs referred to in point 76c of Annex VI\r\nY/N",
+            "type": "string",
+            "enum": [
+              "Y",
+              "N"
+            ]
+          },
+          "00120_Reference_Language": {
+            "description": "Language in which the linked website with past performance, the historical performance (02190_Past_Performance_Link and 02200_Previous_Performance_Scenarios_Calculation_Link) and all narratives/texts of this set of data are written\r\nconditional for products in the category described in Annex VIII number 1 (a) and (b) or  those requiring narratives, i.e. 00006_EPT_Data_Reporting_Narratives=Y \r\n\r\nThe different translations of the narratives are required for underlying options offered  in Germany or Italy. The translations should not me generated automatically but only if the market requires the translation in order to fulfil the requirements of the PRIIPs Regulation.\r\nISO 639-2",
+            "$ref": "#/components/schemas/language"
+          },
+          "01010_Valuation_Frequency": {
+            "description": "Number of valuation days per year for the portfolio or fund or share class.\r\nValuation frequency used for MRM calculation and performance scenarios. This corresponds to the number of valuation days of the fund, share class or portfolio, per year.\r\nSee Annex II, number 12 PRIIPs RTS   Annex IV, number 9 PRIIPs RTS\r\nFrequency (\"0\" = other than /\"1\"= annual  / \"2\"= biannual / \"4\"=quarterly / \"12\"= monthly / \"24\"=bimonthly / \"52\"=weekly / \"104\"=biweekly, \"252\"=daily)",
+            "type": "number",
+            "enum": [
+              0,
+              1,
+              2,
+              4,
+              12,
+              24,
+              52,
+              104,
+              252
+            ]
+          },
+          "01020_Portfolio_VEV_Reference": {
+            "description": "VEV of the portfolio/ share class\r\nMandatory if Portfolio_PRIIPs_Category = 2 or 3\r\nSee Annex II, Numbers 13-17 PRIIPs RTS\r\nfloating decimal",
+            "type": "number"
+          },
+          "01030_IS_Flexible": {
+            "description": "Indicator to alert if the portfolio  is flexible. If the annex II number 14 of the PRIIPs RTS applies\r\nSee Annex II, Number 14 RTS\r\nY / N",
+            "type": "string",
+            "enum": [
+              "Y",
+              "N"
+            ]
+          },
+          "01040_Flex_VEV_Historical": {
+            "description": "VaR equivalent volatility of the portfolio\r\nIntermediate result for control. M if IS_Flexible is set to Y \r\n\r\nSee Annex II, Number 14(a)(i) PRIIPs RTS\r\nfloating decimal",
+            "type": "number"
+          },
+          "01050_Flex_VEV_Ref_Asset_Allocation": {
+            "description": "VaR equivalent volatility of the reference asset allocation of the portfolio\r\nM if IS_Flexible is set to Y \r\n\r\nSee Annex II, Number 14(a)(ii) PRIIPs RTS\r\nfloating decimal",
+            "type": "number"
+          },
+          "01060_IS_Risk_Limit_Relevant": {
+            "description": "Indicator to alert if there is a relevant risk limit for flexible funds\r\nM if IS_Flexible is set to Y \r\n\r\nSee Annex II, Number 14 PRIIPs RTS\r\nY/N",
+            "type": "string",
+            "enum": [
+              "Y",
+              "N"
+            ]
+          },
+          "01070_Flex_VEV_Risk_Limit": {
+            "description": "VaR equivalent volatility of the risk limit of the portfolio\r\nM if IS_Risk_Limit_Relevant is set to Y\r\n\r\nSee Annex II, Number 14(a)(iii) PRIIPs RTS\r\nfloating decimal",
+            "type": "number"
+          },
+          "01080_Existing_Credit_Risk": {
+            "description": "Indicator to alert if there is a credit risk\r\nCredit risk exists only when NAV of the fund is guaranteed and the valuation of the guarantee exceed 10% of the NV without any collateralisation. Cleared OTC or listed derivatives entail no credit risk for the purpose of CRM calculation\r\n\r\nSee Annex II, numbers 30-6 PRIIPs RTS\r\nY/N",
+            "type": "string",
+            "enum": [
+              "Y",
+              "N"
+            ]
+          },
+          "01090_SRI": {
+            "description": "Summary risk indicator of the portfolio\r\nThe SRI of the portfolio as displayed in the portfolio KID. If the SRI was adjusted (Annex III, part 3, Number 52a RTS), the adjusted value has to be reported\r\n\r\nsee Art. 14(c) , Art. 3 and Annexes II and III PRIIPs RTS\r\nnumber [1 - 7]",
+            "type": "number",
+            "minimum": 1,
+            "maximum": 7
+          },
+          "01095_IS_SRI_Adjusted": {
+            "description": "Whether or not the manufacturer has manually increased the SRI\r\nAccording to Annex II, part 3 Nr. 52 a correction of the SRI is possible.\r\nY/N",
+            "type": "string",
+            "enum": [
+              "Y",
+              "N"
+            ]
+          },
+          "01100_MRM": {
+            "description": "Market risk measure of the portfolio\r\nElement B in Annex II requires a separate description of market and credit risk,\r\nsee Art. 14(c) and Art. 3 and Annexes II and III PRIIPs RTS\r\nnumber [1 - 7]",
+            "type": "number",
+            "minimum": 1,
+            "maximum": 7
+          },
+          "01110_CRM": {
+            "description": "Credit risk measure of the fund or the portfolio\r\nThis data is the CRM at the level of the  portfolio/ fund /share class. \r\n \r\nsee Art. 14(c) and Art. 3 And Annexes II and III PRIIPs RTS\r\nnumber [1 - 6]",
+            "type": "number",
+            "minimum": 1,
+            "maximum": 6
+          },
+          "01120_Recommended_Holding_Period": {
+            "description": "Recommended holding period of the portfolio\r\nThis is the RHP of the fund, the share class, the portfolio or the financial instrument.\r\nin years (not an integer)",
+            "type": "integer"
+          },
+          "01125_Has_A_Contractual_Maturity_Date": {
+            "description": "Indicates the existence of a contractual maturity date of the portfolio\r\nY/N",
+            "type": "string",
+            "enum": [
+              "Y",
+              "N"
+            ]
+          },
+          "01130_Maturity_Date": {
+            "description": "Date of maturity\r\nMandatory if Has_A_Contractual_Maturity_Date is set to Y, required to calculate the remaining time to maturity as a RHP\r\nYYYY-MM-DD         ISO 8601",
+            "type": "string",
+            "format": "date"
+          },
+          "01140_Liquidity_Risk": {
+            "description": "Risk of liquidity at the level of the fund or the portfolio, also used for narrative\r\nM = material liquidity risk, I = illiquid, L = no liquidity issue.\r\nM or I, use wording in picture box Annex III, if L no narrative to drive. Liquidity will have to be considered at the level of the insurance product and of the underlying investment. This data is only linked with the underlying investment. \r\n\r\nSee   Art.14 (c ),  Art.3.2 (b) and  Annex II, Part 4 PRIIPs RTS\r\n\"M\", \"I\", \"L\"",
+            "type": "string",
+            "enum": [
+              "M",
+              "I",
+              "L"
+            ]
+          },
+          "02010_Portfolio_Return_Unfavourable_Scenario_1_Year": {
+            "description": "Average annual return of the portfolio, fund, share class corresponding to the unfavourable scenario, after one year\r\nMandatory if RHP >1 year. \r\nautocallables only if called after 1y\r\n\r\nSee Annex IV PRIIPs RTS, However, the performance scenarios  shall be calculated with entry costs retained by the funds and net of all other applicable costs. All other entry costs should not be included in the calculation.\r\nfloating decimal. 100%=1,     5%= 0,05 ; signed amount",
+            "type": "number"
+          },
+          "02020_Portfolio_Return_Unfavourable_Scenario_Half_RHP": {
+            "description": "Average annual return of the portfolio, fund, share class corresponding to the unfavourable scenario, after half of the RHP\r\nMandatory if the RHP >=10 years.\r\n\r\nautocallables only if called after ½ RHP\r\n\r\nSee Annex IV PRIIPs RTS, However, the performance scenarios  shall be calculated with entry costs retained by the funds and net of all other applicable costs. All other entry costs should not be included in the calculation.\r\nfloating decimal. 100%=1,     5%= 0,05 ; signed amount",
+            "type": "number"
+          },
+          "02030_Portfolio_Return_Unfavourable_Scenario_RHP_Or_First_Call_Date": {
+            "description": "Average annual return of the portfolio, fund, share class corresponding to the unfavourable scenario, at the RHP\r\nSee Annex IV PRIIPs RTS. However, the performance scenarios  shall be calculated with entry costs retained by the funds and net of all other applicable costs. All other entry costs should not be included in the calculation.\r\nfloating decimal. 100%=1,     5%= 0,05 ; signed amount",
+            "type": "number"
+          },
+          "02032_Autocall_Applied_Unfavourable_Scenario": {
+            "description": "Indicate if the call has been applied in the unfavourable scenario\r\nY/N",
+            "type": "string",
+            "enum": [
+              "Y",
+              "N"
+            ]
+          },
+          "02035_Autocall_Date_Unfavourable_Scenario": {
+            "description": "Call date applied in the unfavourable scenario\r\nConditional upon datapoint 02032_Autocall_Applied_Unfavourable_Scenario\r\n\r\nsee Annex V, Number 17 Template C: PRIIPs referred to in point 76c of Annex VI (Autocallables) PRIIPs RTS\r\nYYYY-MM-DD         ISO 8601",
+            "type": "string",
+            "format": "date"
+          },
+          "02040_Portfolio_Return_Moderate_Scenario_1_Year": {
+            "description": "Return of the portfolio, fund, share class corresponding to the moderate scenario, after 1 year\r\nMandatory if RHP >1 year. \r\nFor autocallables only if called after 1y\r\nSee Annex IV PRIIPs RTS. However, the performance scenarios  shall be calculated with entry costs retained by the funds and net of all other applicable costs. All other entry costs should not be included in the calculation.\r\nfloating decimal. 100%=1,     5%= 0,05 ; signed amount",
+            "type": "number"
+          },
+          "02050_Portfolio_Return_Moderate_Scenario_Half_RHP": {
+            "description": "Average annual return of the portfolio, fund, share class corresponding to the moderate scenario, after half of the RHP\r\nMandatory if the RHP >=10 years.\r\n\r\nFor autocallables only if called after ½ RHP\r\nSee Annex IV PRIIPs RTS. However, the performance scenarios  shall be calculated with entry costs retained by the funds and net of all other applicable costs. All other entry costs should not be included in the calculation.\r\nfloating decimal. 100%=1,     5%= 0,05 ; signed amount",
+            "type": "number"
+          },
+          "02060_Portfolio_Return_Moderate_Scenario_RHP_Or_First_Call_Date": {
+            "description": "Average annual return of the portfolio, fund, share class corresponding to the moderate scenario, at the RHP\r\nSee Annex IV PRIIPs RTS. However, the performance scenarios  shall be calculated with entry costs retained by the funds and net of all other applicable costs. All other entry costs should not be included in the calculation.\r\nfloating decimal. 100%=1,     5%= 0,05 ; signed amount",
+            "type": "number"
+          },
+          "02062_Autocall_Applied_Moderate_Scenario": {
+            "description": "Indicate if the call has been applied in the moderate scenario\r\nY/N",
+            "type": "string",
+            "enum": [
+              "Y",
+              "N"
+            ]
+          },
+          "02065_Autocall_Date_Moderate_Scenario": {
+            "description": "Call date applied in the moderate scenario\r\nConditional upon data point 02062_Autocall_applied_moderate_scenario\r\n\r\nSee Annex V, Number 17 Template C: PRIIPs referred to in point 76c of Annex VI (Autocallables)\r\nYYYY-MM-DD         ISO 8601",
+            "type": "string",
+            "format": "date"
+          },
+          "02070_Portfolio_Return_Favourable_Scenario_1_Year": {
+            "description": "Annual return  of the portfolio, fund, share class corresponding to the favourable scenario, after 1 year\r\nMandatory if RHP >1 year. \r\nFor autocallables only if called after 1y\r\nSee Annex IV PRIIPs RTS. However, the performance scenarios  shall be calculated with entry costs retained by the funds and net of all other applicable costs. All other entry costs should not be included in the calculation.\r\nfloating decimal. 100%=1,     5%= 0,05 ; signed amount",
+            "type": "number"
+          },
+          "02080_Portfolio_Return_Favourable_Scenario_Half_RHP": {
+            "description": "Average annual return of the portfolio, fund, share class corresponding to the favourable scenario, after half of the RHP\r\nMandatory if the RHP >=10 years.\r\nfor autocallables only if called after ½ RHP\r\nSee Annex IV PRIIPs RTS. However, the performance scenarios  shall be calculated with entry costs retained by the funds and net of all other applicable costs. All other entry costs should not be included in the calculation.\r\nfloating decimal. 100%=1,     5%= 0,05 ; signed amount",
+            "type": "number"
+          },
+          "02090_Portfolio_Return_Favourable_Scenario_RHP_Or_First_Call_Date": {
+            "description": "Average annual return of the portfolio, fund, share class corresponding to the favourable scenario, at the RHP\r\nSee Annex IV PRIIPs RTS. However, the performance scenarios  shall be calculated with entry costs retained by the funds and net of all other applicable costs. All other entry costs should not be included in the calculation.\r\nfloating decimal. 100%=1,     5%= 0,05 ; signed amount",
+            "type": "number"
+          },
+          "02092_Autocall_Applied_Favourable_Scenario": {
+            "description": "Indicate if the call has been applied in the favourable scenario\r\nY/N",
+            "type": "string",
+            "enum": [
+              "Y",
+              "N"
+            ]
+          },
+          "02095_Autocall_Date_Favourable_Scenario": {
+            "description": "Call date applied in the favourable scenario\r\nConditional upon datapoint 02092_Autocall_applied_favourable_scenario\r\n\r\nAnnex V, Number 17 Template C: PRIIPs referred to in point 76c of Annex VI (Autocallables)\r\nYYYY-MM-DD         ISO 8601",
+            "type": "string",
+            "format": "date"
+          },
+          "02100_Portfolio_Return_Stress_Scenario_1_Year": {
+            "description": "Annual return  of the portfolio, fund, share class corresponding to the stress scenario, after 1 year\r\nMandatory if RHP >1 year. \r\nautocallables only if called after 1y\r\n\r\nSee Annex IV PRIIPs RTS. However, the performance scenarios  shall be calculated with entry costs retained by the funds and net of all other applicable costs. All other entry costs should not be included in the calculation.\r\nfloating decimal. 100%=1,     5%= 0,05 ; signed amount",
+            "type": "number"
+          },
+          "02110_Portfolio_Return_Stress_Scenario_Half_RHP": {
+            "description": "Average annual return of the portfolio, fund, share class corresponding to the stress scenario, after half of the RHP\r\nMandatory if the RHP >=10 years.\r\nSee Annex IV PRIIPs RTS. However, the performance scenarios  shall be calculated with entry costs retained by the funds and net of all other applicable costs. All other entry costs should not be included in the calculation.\r\nfloating decimal. 100%=1,     5%= 0,05 ; signed amount",
+            "type": "number"
+          },
+          "02120_Portfolio_Return_Stress_Scenario_RHP_Or_First_Call_Date": {
+            "description": "Average annual return of the portfolio, fund, share class corresponding to the stress scenario, at the RHP\r\nSee Annex IV PRIIPs RTS. However, the performance scenarios  shall be calculated with entry costs retained by the funds and net of all other applicable costs. All other entry costs should not be included in the calculation.\r\nfloating decimal. 100%=1,     5%= 0,05 ; signed amount",
+            "type": "number"
+          },
+          "02122_Autocall_Applied_Stress_Scenario": {
+            "description": "Indicate if the call has been applied\r\nY/N",
+            "type": "string",
+            "enum": [
+              "Y",
+              "N"
+            ]
+          },
+          "02125_Autocall_Date_Stress_Scenario": {
+            "description": "Call date corresponding to the stress scenario of autocallables\r\nConditional upon data point 02122_Autocall_Applied_Stress_Scenario\r\n\r\nAnnex V, Number 17 Template C: PRIIPs referred to in point 76c of Annex VI (Autocallables)\r\nYYYY-MM-DD         ISO 8601",
+            "type": "string",
+            "format": "date"
+          },
+          "02130_Portfolio_Number_Of_Observed_Return_M0": {
+            "description": "See PRIIPs Regulation\r\nSee Annex II, Number 12\r\nfloating decimal",
+            "type": "number"
+          },
+          "02140_Portfolio_Mean_Observed_Returns_M1": {
+            "description": "See PRIIPs Regulation\r\nSee Annex II, Number 12\r\nfloating decimal",
+            "type": "number"
+          },
+          "02150_Portfolio_Observed_Sigma": {
+            "description": "See PRIIPs Regulation\r\nSee Annex II, Number 12\r\nfloating decimal",
+            "type": "number"
+          },
+          "02160_Portfolio_Observed_Skewness": {
+            "description": "See PRIIPs Regulation\r\nSee Annex II, Number 12\r\nfloating decimal",
+            "type": "number"
+          },
+          "02170_Portfolio_Observed_Excess_Kurtosis": {
+            "description": "See PRIIPs Regulation\r\nSee Annex II, Number 12\r\nfloating decimal",
+            "type": "number"
+          },
+          "02180_Portfolio_Observed_Stressed_Volatility": {
+            "description": "See PRIIPs Regulation\r\nstressed volatility applied for stress scenario calculations for >1y\r\n\r\nsee Annex IV Numbers 10 and 11\r\nfloating decimal",
+            "type": "number"
+          },
+          "02185_Portfolio_Past_Performance_Disclosure_Required": {
+            "description": "Does this product fulfil conditions sets in  Annex VIII number 1 (a) and (b) ?\r\nReference Art. 8(3) RTS\r\nY/N",
+            "type": "string",
+            "enum": [
+              "Y",
+              "N"
+            ]
+          },
+          "02190_Past_Performance_Link": {
+            "description": "Reference Art. 8(3) RTS\r\nConditional upon data point 02185_Portfolio_Past_Performance_Disclosure_Required.\r\nThe link should provide access to the past performance disclosure in the local language. It should be the same as the one displayed in the PRIIPs KID of the underlying.\r\nstring",
+            "type": "string"
+          },
+          "02200_Previous_Performance_Scenarios_Calculation_Link": {
+            "description": "Link to the previous calculations\r\nConditional upon data point 02185_Portfolio_Past_Performance_Disclosure_Required.\r\nThe link should provide access to the past performance disclosure in the local language. It should be the same as the one displayed in the PRIIPs KID of the underlying.\r\nstring",
+            "type": "string"
+          },
+          "02210_Past_Performance_Number_Of_Years": {
+            "description": "Number of years for which past performance is presented\r\nconditional upon data point 02185_Portfolio_Past_Performance_Disclosure_Required\r\nnumber  [0 - 10]",
+            "type": "number",
+            "minimum": 0,
+            "maximum": 10
+          },
+          "02220_Reference_Invested_Amount": {
+            "description": "Reference Invested amount used to present performance and costs\r\nAnnex VI, Number 91: where the currency of the PRIIP is not in Euros, an amount of a similar magnitude and which is cleanly divisible by 1 000 shall be used. Relevant for currencies, where the invested amount is not 10000 (such as SEK or HKD). Common values are 10 000, 100 000...depending on currencies.\r\ninteger",
+            "type": "integer"
+          },
+          "03010_One_Off_Cost_Portfolio_Entry_Cost": {
+            "description": "Subscription fees not acquired to the fund or the share class or portfolio mandate. Expressed as a % of the amount to be invested\r\nThis data is the maximum costs that may be charged by the Asset managers. These costs are generally acquired to the distributor. It is indicative and should be adapted by the insurance company receiving the file to take into account the commercial agreement with the asset manager.\r\n\r\nAnnex VI part 1 points 1 to 3\r\nAnnex VI part 1 points 27 to 30, 34 and 36 to 46\r\nAnnex VII table 2\r\nfloating decimal. 100%=1,     5%= 0,05",
+            "type": "number"
+          },
+          "03015_One_Off_Cost_Portfolio_Entry_Cost_Acquired": {
+            "description": "Subscription fees acquired to the fund or the share class or portfolio mandate. Expressed as a % of the amount to be invested\r\nThis data correspond to fixed fees that may be charged to any subscriber and that are acquired to the fund. It is the case for some real estate funds. These costs are paid by the subscriber but included in the assets of the fund.\r\n\r\nAnnex VI part 1 Numbers 1 to 3\r\nAnnex VI part 1  Numbers 27 to 30, 34 and 36 to 46\r\nAnnex VII table 2\r\nfloating decimal. 100%=1,     5%= 0,05",
+            "type": "number"
+          },
+          "03020_One_Off_Costs_Portfolio_Exit_Cost_At_RHP": {
+            "description": "Exit fees at the end of RHP for the portfolio or fund or share class. It is expressed as a % of net asset value.\r\nBe careful entry and exit fees may be considered as transaction fees at the level of the insurance contract as well as arbitrage costs.\r\n\r\nAnnex VI part 1 points 1 to 3\r\nAnnex VI part 1  points 27 to 30, 34 and 36 to 46\r\nAnnex VII table 2\r\nfloating decimal. 100%=1,     5%= 0,05",
+            "type": "number"
+          },
+          "03030_One_Off_Costs_Portfolio_Exit_Cost_At_1_Year": {
+            "description": "Exit fees after one year for the portfolio or fund or share class. It is expressed as a % of net asset value.\r\nMandatory if RHP >1 year.\r\nBe careful entry and exit fees may be considered as transaction fees at the level of the insurance contract as well as arbitrage costs.\r\n\r\nAnnex VI part 1 points 1 to 3\r\nAnnex VI part 1  points 27 to 30, 34 and 36 to 46\r\nAnnex VII table 2\r\nfloating decimal. 100%=1,     5%= 0,05",
+            "type": "number"
+          },
+          "03040_One_Off_Costs_Portfolio_Exit_Cost_At_Half_RHP": {
+            "description": "Exit fees after half of the RHP for the portfolio or fund or share class. It is expressed as a % of net asset value.\r\nMandatory if RHP >= 10 year.\r\nBe careful entry and exit fees may be considered as transaction fees at the level of the insurance contract as well as arbitrage costs.\r\n\r\nAnnex VI part 1 points 1 to 3\r\nAnnex VI part 1  points 27 to 30, 34 and 36 to 46\r\nAnnex VII table 2\r\nfloating decimal. 100%=1,     5%= 0,05",
+            "type": "number"
+          },
+          "03050_One_Off_Costs_Portfolio_Sliding_Exit_Cost_Indicator": {
+            "description": "Indicates whether there is a sliding exit cost or not\r\nAnnex VI part 1 points 1 to 3\r\nAnnex VI part 1  points 27 to 30, 34 and 36 to 46\r\nAnnex VII table 2\r\nY/N",
+            "type": "string",
+            "enum": [
+              "Y",
+              "N"
+            ]
+          },
+          "03060_Ongoing_Costs_Management_Fees_And_Other_Administrative_Or_Operating_Costs": {
+            "description": "See PRIIPs definition as a % of NAV of the portfolio, the funds or the share class / per annum. Management fees and other administrative or operating costs\r\nTotal fees applied, including look through for fund of funds / custodian fees / management fees. \r\n\r\nAnnex VI part 1 points 4 to 5\r\nfloating decimal. 100%=1,     5%= 0,05",
+            "type": "number"
+          },
+          "03080_Ongoing_Costs_Portfolio_Transaction_Costs": {
+            "description": "See PRIIPs definition as a % of NAV of the portfolio, the funds or the share class / per annum.\r\nTransaction costs calculated as per Annex VI part 1 points 7 to 23c.\r\nTransaction costs have to be calculated according to the EU methodology\r\nfloating decimal. 100%=1,     5%= 0,05",
+            "type": "number"
+          },
+          "03090_Existing_Incidental_Costs_Portfolio": {
+            "description": "Indicates whether there are existing performance fees or carried interest\r\nY/N",
+            "type": "string",
+            "enum": [
+              "Y",
+              "N"
+            ]
+          },
+          "03095_Incidental_Costs": {
+            "description": "See PRIIPs definition as a % of NAV of the portfolio, the funds or the share class / per annum\r\nconditional upon data point 03090_Existing_Incidental_Costs_Portfolio\r\nas per regulation. Mandatory if item 03090_Existing_Incidental_Costs_Portfolio is set to Y\r\n\r\nAnnex VI part 1 points 24 to 26\r\nfloating decimal. 100%=1,     5%= 0,05",
+            "type": "number"
+          },
+          "04020_Comprehension_Alert_Portfolio": {
+            "description": "cf Art.14a + annex 1\r\nArt.14(a) and Annex I\r\nY/N",
+            "type": "string",
+            "enum": [
+              "Y",
+              "N"
+            ]
+          },
+          "04030_Intended_Target_Market_Retail_Investor_Portfolio": {
+            "description": "Text in reference language, as proposed by the asset manager\r\n\r\nThe description of the type of retail investor to whom the PRIIP is intended to be marketed in the section entitled ‘What is this product?’ of the key information document shall include information on the target retail investors identified by the PRIIP manufacturer, in particular depending on the needs, characteristics and objectives of the type of client for whom the PRIIPs is compatible. This determination shall be based upon the ability of retail investors to bear investment loss and their investment horizon preferences, their theoretical knowledge of, and past experience with PRIIPs, the financial markets as well as the needs, characteristics and objectives of potential end clients.\r\nArt. 2.3 & 14(b)\r\nstring [4000]",
+            "type": "string",
+            "maxLength": 4000
+          },
+          "04040_Investment_Objective_Portfolio": {
+            "description": "Text in reference language, as proposed by the asset manager\r\n\r\nInformation stating the objectives of the PRIIP and the means for achieving those objectives in the section entitled ‘What is this product?’ of the key information document shall be summarised in a brief, clear and easily understandable manner. That information shall identify the main factors upon which return depends, the underlying investment assets or reference values, and how the return is determined, as well as the relationship between the PRIIP’s return and that of the underlying investment assets or reference values.\r\nArt. 2.2, 2a-2c, 14(b)\r\n03090_Existing_Incidental_Costs_Portfolio\r\nThe limitation is relevant for all languages.\r\nIn Italy there is a limitation imposed by the supervisor CONSOB of 4000 characters.\r\nstring [8000]",
+            "type": "string",
+            "maxLength": 8000
+          },
+          "04050_Risk_Narrative_Portfolio": {
+            "description": "Text in reference language, as proposed by the asset manager\r\n\r\n[insert a brief explanation of the classification of the product with a maximum of 300 characters in plain language] \r\n\r\nThe field shall contain well-formulated text which can be used directly by the insurer in the KID according to article 14 of the regulation\r\nFund managers can use the example explanation provided below annex 3, point 7, Element B including SRI portfolio information, or choose to provide other relevant information.\r\n\r\nExample for SRI =4: This rates the potential losses from future performance at a medium level, and poor market conditions could impact the payout. \r\n\r\nArt.14(c) + Annex III point 7\r\nstring [300]",
+            "type": "string",
+            "maxLength": 300
+          },
+          "04060_Other_Materially_Relevant_Risk_Narrative_Portfolio": {
+            "description": "Text in reference language, as proposed by the asset managers : (Element E)\r\n[Where applicable: element h] [Other risks materially relevant to the PRIIP not included in the summary risk indicator to be explained with a maximum of 200 characters]  \r\nThe field shall contain well-formulated text which can be used directly by the insurer in the KID according to article 14 of the regulation.\r\nIf no other relevant risks, leave blank\r\nExample\r\nDue to effects of unusual market conditions, other risks could be triggered, such as: counterparty risk and liquidity risk. Please refer to the KIID for more detail.\r\n\r\nAnnex III point 7 E\r\nstring [200]",
+            "type": "string",
+            "maxLength": 200
+          },
+          "04070_Type_Of_Underlying_Investment_Option": {
+            "description": "understandable to the customer\r\nLegal form, for example, SICAV, OEIC, Investment Trust, FCP.\r\nstring [300]",
+            "type": "string",
+            "maxLength": 300
+          },
+          "04080_Capital_Guarantee": {
+            "description": "Boolean to identify whether the portfolio has a general capital guarantee or not.\r\nThe fields following 41-47, as well as field 04080_Capital_Guarantee shall only be filled when answer is \"Y\". If \"no\", Element H of Annex 3 Point 7 applies and fields 01141-47 do not have to be populated\r\n\r\nAnnex III point 4c and 7, element G\r\nY/N",
+            "type": "string",
+            "enum": [
+              "Y",
+              "N"
+            ]
+          },
+          "04081_Capital_Guarantee_Level": {
+            "description": "Capital Guarantee level. Minimum amount will be paid at redemption in%. Cf annex 3, point 7, Element F\r\nrequired then capital guarantee is set to YES\r\n\r\nAnnex III, point 7, Element F\r\nfloating decimal. 100%=1,     5%= 0,05",
+            "type": "number"
+          },
+          "04082_Capital_Guarantee_Limitations": {
+            "description": "[insert a brief explanation of the guarantee limits of the product with a maximum of 300 characters in plain language] \r\n\r\nThe field shall contain well-formulated text which can be used directly by the insurer in the KID according to article 14 of the regulation.\r\nrequired then capital guarantee is set to YES\r\n\r\nAnnex III, point 7, Element G (bullet point 3)\r\nstring[300]",
+            "type": "string",
+            "maxLength": 300
+          },
+          "04083_Capital_Guarantee_Early_Exit_Conditions": {
+            "description": "Date before which the early exit conditions apply.\r\nrequired then capital guarantee is set to YES\r\n\r\nAnnex III, point 7, Element G (bullet point 1)\r\nYYYY-MM-DD         ISO 8601",
+            "type": "string",
+            "format": "date"
+          },
+          "04084_Capital_Guarantee_Portfolio": {
+            "description": "characteristics of the guarantee: open ended or fixed maturity, daily or monthly lockin, monthly reset, constant guarantee, reference value (highest NAV, NAV of start period,…), other particularities, name of the guarantor\r\nrequired if 04080_Capital_Guarantee  is set to YES.\r\n\r\nAnnex III point 7 Elements  F & G\r\nstring [2500]",
+            "type": "string",
+            "maxLength": 2500
+          },
+          "04086_Description_Past_Interval_Unfavourable_Scenario": {
+            "description": "Describes the historical time period the unfavourable scenario corresponds to\r\nConditional upon Portfolio_PRIIPs_Category =2,  \r\nAnnex V, Part 1, point 5 and Part 2,  Element E, description when the unfavourable scenario occurred including name of the benchmark where applicable and the beginning and end year of the historical scenario.\r\nstring[300]",
+            "type": "string",
+            "maxLength": 300
+          },
+          "04087_Description_Past_Interval_Moderate_Scenario": {
+            "description": "Describes the historical time period the moderate scenario corresponds to\r\nConditional upon Portfolio_PRIIPs_Category =2,  \r\nAnnex V, Part 1, Number 5 and Part 2,  Element E, description when the moderate scenario occurred including name of the benchmark where applicable and the beginning and end year of the historical scenario.\r\nstring[300]",
+            "type": "string",
+            "maxLength": 300
+          },
+          "04088_Description_Past_Interval_Favourable_Scenario": {
+            "description": "Describes the historical time period the favourable scenario corresponds to\r\nConditional upon Portfolio_PRIIPs_Category =2,  \r\nAnnex V, Part 1, point 5 and Part 2,  Element E, description when the favourable scenario occurred including name of the benchmark where applicable and the beginning and end year of the historical scenario.\r\nstring[300]",
+            "type": "string",
+            "maxLength": 300
+          },
+          "04089_Was_Benchmark_Used_Performance_Calculation": {
+            "description": "Boolean to identify whether a benchmark or proxy was used for performance calculation in the unfavourable, moderate and favourable scenarios.\r\nConditional upon Portfolio_PRIIPs_Category =2, except those referred to in point 15 of Annex IV\r\nAnnex V, Part 1, point 3 and Part 2, Element C\r\nY/N",
+            "type": "string",
+            "enum": [
+              "Y",
+              "N"
+            ]
+          },
+          "04090_Portfolio_Performance_Fees_Carried_Interest_Narrative": {
+            "description": "Describes the incidental costs taken under specific conditions.\r\nSee Art. 5(3)(c) RTS,  Annex VII, Table 2 RTS. Both carried interest and performance fees should be included in the narrative\r\nstring  [300]",
+            "type": "string",
+            "maxLength": 300
+          },
+          "04120_One_Off_Cost_Portfolio_Entry_Cost_Description": {
+            "description": "Description of the entry cost, not more than 300 characters.\r\nAnnex VII, table 2\r\nexamples:\r\n-\t\" [] % of the amount you pay in when entering this investment”\r\n-\t“[ ] % of the first [ ] premiums you pay”\r\n-\t“These costs are already included in the [price / premiums] you pay”\r\n-\t“This includes distribution costs of [[ ] % of amount invested / [\r\n] EUR]. [This is the most you will be charged]. [The person selling you the product will inform you of the actual charge]”\r\n-\t“We do not charge an entry fee”]\r\nstring[300]",
+            "type": "string",
+            "maxLength": 300
+          },
+          "04130_One_Off_Cost_Portfolio_Exit_Cost_Description": {
+            "description": "Description of exit cost, not more than 300 characters.\r\nAnnex VII, table 2\r\n[Describe nature in no more than 300 characters. Examples: - “[ ] % of your investment before it is paid out to you” - “We do not charge an exit fee for this product, [but the person selling you the product may do so]” (Where exit costs only apply in specific circumstances) – “These costs only apply if (explain circumstances or an example in maximum 200 characters)\r\nstring[300]",
+            "type": "string",
+            "maxLength": 300
+          },
+          "04140_Ongoing_Costs_Portfolio_Management_Costs_Description": {
+            "description": "Description of the ongoing cost, not more than 150 characters.\r\nAnnex VII, table 2\r\nExample:\r\n“[ ] % of the value of your investment per year”].\r\nThis is an estimate based on actual costs over the last year.\r\nstring[150]",
+            "type": "string",
+            "maxLength": 150
+          },
+          "04150_Do_Costs_Depend_On_Invested_Amount": {
+            "description": "Indicates whether the costs depend on the invested amount.\r\nYes if the costs of the portfolio depend on the invested amount \r\n\r\nSee Annex VII, 2nd table on costs\r\nY/N",
+            "type": "string",
+            "enum": [
+              "Y",
+              "N"
+            ]
+          },
+          "04160_Cost_Dependence_Explanation": {
+            "description": "Describes the dependence of costs on the invested amount, not more than 150 characters.\r\nConditional upon Do_Costs_Depend_On_Invested_Amount=Y\r\n\r\nIf the costs depend on the invested amount, the kind of dependence should be explained after the second cost table\r\n\r\nSee Annex VII, 2nd table on costs\r\nstring[150]",
+            "type": "string",
+            "maxLength": 150
+          },
+          "06005_German_MOPs_Reference_Date": {
+            "description": "Last calculation date  of the additional information required in Germany.\r\nTo be filled in provided that data point 00008_EPT_Data_Reporting_Additional_Requirements_German_MOPs is \"Y\".\r\n\r\nData points 06010_Bonds_Weight,06020_Annualized_Return_Volatility and 06030_Duration_Bonds are used by the German insurers under specific national regulation on PRIIPs. As a minimum this data should be recalculated annually and when a new KID is produced. If this data is recalculated more frequently than annually it can be also be updated in the EPT.\r\nYYYY-MM-DD         ISO 8601",
+            "type": "string",
+            "format": "date"
+          },
+          "06010_Bonds_Weight": {
+            "description": "Proportion (weight) of bonds and bonds futures within the fund/portfolio measured in percentage of market value.\r\nTo be filled provided data point 00008_EPT_Data_Reporting_Additional_Requirements_German_MOPs is \"Y.\r\n\r\nmoney market funds can be either included as 100% bonds (with duration 1) or 0% bonds (i.e. as equity fund with volatility 0).  \r\n\r\nFutures and derivatives are excluded from the calculation.\r\nfloating decimal. 100%=1,     5%= 0,05",
+            "type": "number"
+          },
+          "06020_Annualized_Return_Volatility": {
+            "description": "Average annualised daily volatility of the fund / portfolio  over the last 5 years.\r\nTo be filled in provided that data point 00008_EPT_Data_Reporting_Additional_Requirements_German_MOPs is \"Y\".\r\n\r\nThe data point is an average over five years of annual volatilities.\r\n1) as a first step, for the last five years annualised daily volatility calculated on a 250 days convention per year. For funds with weekly valuation it should be the weekly annualized volatility (52 weeks annualised volatility)\r\n2) as a second step, average over the five values in step 1 is calculated.\r\nWhen the historical data are not available, an appropriate proxy or benchmark should be used.\r\nfloating decimal. 100%=1,     5%= 0,05",
+            "type": "number"
+          },
+          "06030_Duration_Bonds": {
+            "description": "Valuation Weighted Macaulay-Duration in years of the fund / portfolio\r\nTo be filled in provided that data point 00008_EPT_Data_Reporting_Additional_Requirements_German_MOPs is \"Y\".\r\nSee relevant bond components in the comment to 06010_Bonds_Weight\r\nfloating decimal.",
+            "type": "number"
+          },
+          "06040_Existing_Capital_Preservation": {
+            "description": "Identifies if a capital preservation method is used (Y) or not (N).\r\nMandatory for German market. This field shall be used if the loss of a fund over a certain time period (e.g. monthly or annually) is limited due to a (partial) guarantee  (e.g. 75% or 90%). It might be different from the field 04081_Capital_Guarantee_Level which specifies the level of guarantee at the RHP.\r\nY/N",
+            "type": "string",
+            "enum": [
+              "Y",
+              "N"
+            ]
+          },
+          "06050_Capital_Preservation_Level": {
+            "description": "100% minus the maximum possible loss in percentage of its market value.\r\nMandatory for German market. The field 06050_Maximum_Loss  shall only be filled when answer is 'Y' in 06040_Has_Capital_Preserveration.This field shall be used if the loss of a fund over a certain time period (e.g. monthly or annually) is limited due to a (partial) guarantee  (e.g. 75% or 90%). It might be different from the field 04081_Capital_Guarantee_Level which specifies the level of guarantee at the RHP.\r\nfloating decimal. 100%=1,      80%= 0,80",
+            "type": "number"
+          },
+          "06060_Time_Interval_Maximum_Loss": {
+            "description": "The time period in which a possible loss of a capital preservation funds is measured.\r\nThe field 06060_Time_Interval_Maximum_Loss  shall only be filled when answer is 'Y' in 06040_Has_Capital_Preserveration. E.g. if the time period is one month und the maximum loss is 20 % of the market value, the funds can lose 20 % of its market value on a monthly basis. Mandatory for German market\r\nFrequency (/\"1\"= annual  / \"2\"= biannual / \"4\"=quarterly / \"12\"= monthly / \"24\"=bimonthly / \"52\"=weekly / \"104\"=biweekly/\"252\"=daily /\"YYYY-MM-DD\"=fixed date)",
+            "oneOf": [
+              {
+                "type": "number",
+                "enum": [
+                  0,
+                  1,
+                  2,
+                  4,
+                  12,
+                  24,
+                  52,
+                  104,
+                  252
+                ]
+              },
+              {
+                "type": "string",
+                "format": "date"
+              }
+            ]
+          },
+          "06070_Uses_PI": {
+            "description": "Identifies if PI (Portfolio Insurance including CPPI Constant Proportion Portfolio Insurance)  is used (Y) or not (N) for capital preservation.\r\nMandatory for German market\r\nY/N",
+            "type": "string",
+            "enum": [
+              "Y",
+              "N"
+            ]
+          },
+          "06080_Multiplier_PI": {
+            "description": "Gives the maximum multiplier value if PI algorithm is used.\r\nThis field shall only be filled when answer is \"Y\" in 06070_Uses_PI. Mandatory for German market\r\nfloating decimal. 100%=1,     5%= 0,05",
+            "type": "number"
+          },
+          "07005_First_Possible_Call_Date": {
+            "description": "Date of the first possible call for autocallable products\r\ndate of the earliest call to be included in the first table on costs over time, conditional on, conditional upon 00110_Is_An_Autocallable_Product =Y\r\nYYYY-MM-DD         ISO 8601",
+            "type": "string",
+            "format": "date"
+          },
+          "07010_Total_Cost_1_Year_Or_First_Call": {
+            "description": "Total cost in 00060_Portfolio_Or_Share_Class_Currency terms in case the investor cashes in after one year, as requested in the \"Costs over time\" table. Rebased to 1.\r\nIncludes the total cost in money terms if the investor sells the product after one year. This is based on a 0% performance assumption (or consistent with autocalled scenario) and is shown in the \"Costs over time\" table.\r\nfloating decimal.",
+            "type": "number"
+          },
+          "07020_RIY_1_Year_Or_First_Call": {
+            "description": "RIY in case the investor cashes in after one year, as requested in the \"Costs over time\" table.\r\nIncludes the impact on return (RIY) per year if the investor sells the product after one year. This is based on  a 0% performance assumption and is shown in the \"Costs over time\" table.\r\nfloating decimal. 1%=0,01,      5%= 0,05",
+            "type": "number"
+          },
+          "07030_Total_Cost_Half_RHP": {
+            "description": "Total cost in 00060_Portfolio_Or_Share_Class_Currency terms in case the investor cashes in at the middle of the RHP, as requested in the \"Costs over time\" table.\r\nIncludes the total cost in money terms if the investor sells the product at the middle of the RHP. This is based on the moderate scenario and is shown in the \"Costs over time\" table.\r\nfloating decimal.",
+            "type": "number"
+          },
+          "07040_RIY_Half_RHP": {
+            "description": "RIY in case the investor cashes in at the middle of the RHP, as requested in the \"Costs over time\" table.\r\nIncludes the impact on return (RIY) per year if the investor sells the product at the middle of the RHP. This is based on the moderate scenario (for autocallables a scenario consistent with the product reaching maturity) and is shown in the \"Costs over time\" table.\r\nfloating decimal. 1%=0,01,      5%= 0,05",
+            "type": "number"
+          },
+          "07050_Total_Cost_RHP": {
+            "description": "Total cost in 00060_Portfolio_Or_Share_Class_Currency terms in case the investor cashes in at the RHP, as requested in the \"Costs over time\" table.\r\nIncludes the total cost in money terms if the investor sells the product at the RHP. This is based on the moderate scenario and is shown in the \"Costs over time\" table.\r\nfloating decimal.",
+            "type": "number"
+          },
+          "07060_RIY_RHP": {
+            "description": "RIY in case the investor cashes in at the RHP, as requested in the \"Costs over time\" table.\r\nIncludes the impact on return (RIY) per year if the investor sells the product at the RHP. This is based on the moderate scenario and is shown in the \"Costs over time\" table.\r\nfloating decimal. 1%=0,01,      5%= 0,05",
+            "type": "number"
+          },
+          "07070_One_Off_Costs_Portfolio_Entry_Cost": {
+            "description": "The entry cost at one year (or at RHP if RHP<1y), as requested in the narrative part of the \"Composition of costs\" table.\r\n% of the notional amount when entering this investment. Included in the purchase price\r\nFor structured products it corresponds to  [Offer Price – Fair Value + entry cost on top of issue price]\r\nfloating decimal. 1%=0,01,      5%= 0,05",
+            "type": "number"
+          },
+          "07080_One_Off_Costs_Portfolio_Exit_Cost": {
+            "description": "The exit cost at one year (or at RHP if RHP<1y), as requested in the narrative part of the \"Composition of costs\" table.\r\n% of the notional amount when exiting the investment before maturity. Included in the selling price. These only apply if you sell your investment prior to expiry. The number indicated assumes that normal market conditions applies.  \r\nFor structured products it corresponds to  \r\nIf RHP<1y => 0 %\r\nIf RHP>1y => [BidOffer / 2] + any additional exit cost applicable at 1year",
+            "type": "string"
+          },
+          "07090_Ongoing_Costs_Portfolio_Transaction_Costs": {
+            "description": "The portfolio transaction costs  at one year (or at RHP if RHP<1y), as requested in the narrative part of the \"Composition of costs\" table.\r\nfloating decimal. 1%=0,01,      5%= 0,05",
+            "type": "number"
+          },
+          "07100_Ongoing_Costs_Management_Fees_And_Other_Administrative_Or_Operating_Costs": {
+            "description": "The other ongoing costs term at one year (or at RHP if RHP<1y), as requested in the narrative part of the \"Composition of costs\" table.\r\n% of the notional per year. \r\nFor structured products it the running cost for the first year (different to the EMT field for ongoing cost, which is an average running cost over the life of the product)",
+            "type": "string"
+          },
+          "07110_Incidental_Costs_Portfolio_Performance_Fees_Carried_Interest": {
+            "description": "The performance fees, as requested in the \"Composition of costs\" table.\r\nFor structured products : 0 %\r\nfloating decimal. 1%=0,01,      5%= 0,05",
+            "type": "number"
+          },
+          "08010_UK_PRIIP_Or_UCITS_Or_Both_data_delivery": {
+            "description": "Indicates if the line contains UK PRIIPs data, UCITS data or Both\r\nMandatory if providing UK data otherwise leave blank\r\nApply the \"mandatory\", \"conditional\" or \"optional\" specification as follows:\r\n- EU-only distribution leave this section blank.\r\n- EU and UK distribution include this section.\r\n- UK-only distribution include this section and leave fields not marked \"x\" in column H blank.\r\nIn this section apply the \"mandatory\", \"conditional\" or \"optional\" specification according to the setting in 08010 as follows:\r\n- UKPRIIP - complete the \"UK PRIIPs data\" section and leave the \"Specific UCITS data for UK insurers opting for Art 14.2 for MOP\" section blank.\r\n- UCITS - complete the \"Specific UCITS data for UK insurers opting for Art 14.2 for MOP\" section and leave the \"UK PRIIPs data\" section blank.\r\n- Both - complete both the \"UK PRIIPs data\" section and the \"Specific UCITS data for UK insurers opting for Art 14.2 for MOP\" section.\r\nUKPRIIP/UCITS/Both",
+            "type": "string",
+            "enum": [
+              "UKPRIIP",
+              "UCITS",
+              "Both"
+            ]
+          },
+          "08020_UK_Ongoing_Costs_Portfolio_Transaction_Costs": {
+            "description": "See UK PRIIPs definition for PRIIPs other than UCITS/NURS.\r\nUCITS/NURS may follow alternative definitions.\r\nExpress as a % of NAV of the portfolio, the funds or the share class / per annum.\r\nTransaction costs calculated as per UK Annex VI part 1 points 7 to 23C for UK PRIIPs. UCITS/NURS may use an alternative methodology.\r\nUK version of 03080.\r\nNote that in Annex VI, UK RTS differs to EU RTS in that: point 8a is absent, point 11(c) is different, and point 11A is added.\r\nfloating decimal. 100%=1,     5%= 0,05",
+            "type": "number"
+          },
+          "08030_UK_Transactions_costs_methodology": {
+            "description": "1. New PRIIPS methodology\r\n2. Full UK PRIIPS methodology \r\n3. Other methodology\r\nConditional on giving a figure in 08020\r\nIndicate the option chosen by the Asset Manager to calculate transaction costs for UCITS/NURS\r\n1, or 2, or 3",
+            "type": "number",
+            "enum": [
+              1,
+              2,
+              3
+            ]
+          },
+          "08040_UK_Anti_Dilution_Benefit_Derived": {
+            "description": "Information about the total benefit derived from an anti-dilution mechanism\r\nTo be provided as part of the narrative description display for transaction costs in the KID.\r\n\r\nUK Annex VI point 11A\r\nstring[200]",
+            "type": "string",
+            "maxLength": 200
+          },
+          "08045_UK_PRIIPs_Data_Reference_Date": {
+            "description": "The date to which the UK PRIIPs data in this section relates\r\nConditional on 08010 set to Both\r\nYYYY-MM-DD         ISO 8601",
+            "type": "string",
+            "format": "date"
+          },
+          "08050_UK_PRIIPs_KID_Publication_Date": {
+            "description": "Date of the latest UK PRIIPs KID produced for the portfolio or share class.\r\nConditional on08010_UK_PRIIP_Or_UCITS_Or_Both_data_delivery being UKPRIIP or both.\r\nData in the EPT should be consistent with the data presented in the last KID produced.\r\nIf there is an ad-hoc revision of the KID due to material changes, it should trigger an updated version of the EPT.\r\n\r\nUK version of 00070\r\nYYYY-MM-DD         ISO 8601",
+            "type": "string",
+            "format": "date"
+          },
+          "08060_UK_PRIIPs_KID_Web_Address": {
+            "description": "Direct link to the UK PRIIPs KID\r\nConditional on a UK PRIIP KID being produced.\r\nIt should directly link to the document and not to a generic site.\r\nUK version of 00075\r\nstring",
+            "type": "string"
+          },
+          "08070_Investment_Objective_Portfolio": {
+            "description": "Text in reference language, as proposed by the asset manager\r\n\r\nInformation stating the objectives of the PRIIP and the means for achieving those objectives in the section entitled ‘What is this product?’ of the key information document shall be summarised in a brief, clear and easily understandable manner. That information shall identify the main factors upon which return depends, the underlying investment assets or reference values, and how the return is determined, as well as the relationship between the PRIIP’s return and that of the underlying investment assets or reference values.\r\nWhen completing the UK section this field is conditional on 00006 being set to \"Y\"\r\n\r\nArt. 2.2, 14.(b)\r\nUK version of 04040\r\nstring [2500]",
+            "type": "string",
+            "maxLength": 2500
+          },
+          "08080_UK_Other_Materially_Relevant_Risk_Narrative_Portfolio": {
+            "description": "Text in reference language, as proposed by the asset managers : (Element E)\r\n[Where applicable: element h] [Other risks materially relevant to the PRIIP not included in the summary risk indicator to be explained with a maximum of 400 characters]\r\nThe field shall contain well-formulated text which can be used directly by the insurer in the KID according to article 14 of the regulation.\r\nWhen completing the UK section this field is conditional on 00006 being set to \"Y\"\r\n\r\nIf no other relevant risks, leave blank\r\nExample\r\nDue to effects of unusual market conditions, other risks could be triggered, such as: counterparty risk and liquidity risk. Please refer to the KIID for more detail.\r\n\r\nUK Annex III point 7 E\r\nUK version of 04060\r\nstring [400]",
+            "type": "string",
+            "maxLength": 400
+          },
+          "08090_UK_Performance_Information_Main_Factors": {
+            "description": "A description of the main factors likely to affect future returns for the investor, identifying those most likely to determine the outcome of the investment and other factors which could have a material impact on performance.\r\nThe identification of the most relevant index, benchmark, target, or proxy, as applicable, along with an explanation of how the PRIIP is likely to compare in terms of performance and volatility, may be included as part of this field.\r\nUK Annex 4A point 3a\r\nstring[4000]",
+            "type": "string",
+            "maxLength": 4000
+          },
+          "08100_UK_Performance_Information_Comparator": {
+            "description": "Identification of the most relevant index, benchmark, target, or proxy, as applicable, along with an explanation of how the PRIIP is likely to compare in terms of performance and volatility.\r\nConditional there being a relevant comparator and this information not being included in 08090_UK_Performance_Information_Main_Factors\r\nUK Annex 4A point 3b\r\nstring[1000]",
+            "type": "string",
+            "maxLength": 1000
+          },
+          "08110_UK_Performance_Information_Higher_Returns": {
+            "description": "A brief explanation of the kinds of conditions that would be conducive to the PRIIP generating higher returns.\r\nUK Annex 4A point 3c\r\nstring[1000]",
+            "type": "string",
+            "maxLength": 1000
+          },
+          "08120_UK_Performance_Information_Lower_Returns_Or_Loss": {
+            "description": "A brief explanation of the kinds of conditions whereby the PRIIP is likely to generate lower returns or lead to investment loss.\r\nUK Annex 4A point 3d\r\nstring[1000]",
+            "type": "string",
+            "maxLength": 1000
+          },
+          "08130_UK_Performance_Information_Adverse_Conditions": {
+            "description": "A brief description of what outcome the investor may expect where the PRIIP matures or is redeemed or encashed under severely adverse market conditions.\r\nUK Annex 4A point 3e\r\nstring[1000]",
+            "type": "string",
+            "maxLength": 1000
+          },
+          "08140_UK_Assumed_Portfolio_Return": {
+            "description": "The performance used as the annual internal rate of return for estimating future benefit payments when calculating summary cost indicators\r\nconditional upon 00009_EPT_Additional_Information_Structured_Products=Y, leave blank for non-structured products\r\nAn assumed return equivalent a moderate performance scenario based on reasonable and robust assumptions and methodology per Annex VI point 71(a).\r\n[Note that where insurers use a UCITS KIID under Art.14.2 this return is assumed always to be 3% (see UK Annex VI point 71c)].\r\nfloating decimal. 100%=1,     5%= 0,05 ; signed amount",
+            "type": "number"
+          },
+          "08150_UCITS_KIID_Publication_Date": {
+            "description": "Date of the latest UCITS KIID produced for the portfolio or share class.\r\nData in the EPT should be consistent with the data presented in the last KIID produced.\r\nIf there is an ad-hoc revision of the KIID due to material changes, it should trigger an updated version of the EPT.\r\nUCITS version of 00070\r\nYYYY-MM-DD         ISO 8601",
+            "type": "string",
+            "format": "date"
+          },
+          "08160_UCITS_KIID_Web_Address": {
+            "description": "Direct link to the UCITS KIID\r\nIt should directly link to the document and not to a generic site.\r\nUCITS version of 00075\r\nstring",
+            "type": "string"
+          },
+          "08170_UCITS_SRRI": {
+            "description": "The SRRI of the Valid UCITS KIID\r\nThe methodology to calculate the SRI range in the generic KID for MOP must be defined.\r\nnumber [1 - 7]",
+            "type": "number",
+            "minimum": 1,
+            "maximum": 7
+          },
+          "08180_UCITS_Ongoing_Charges": {
+            "description": "See UCITS definition as a % of NAV of the portfolio, the funds or the share class / per annum\r\nUsed by insurer only in the case Article 13 point 3 applies\r\nfloating decimal. 100%=1, 5%= 0,05",
+            "type": "number"
+          },
+          "08190_UCITS_Existing_Performance_Fees": {
+            "description": "Indicates whether there are existing performance fees or carried interest\r\nUsed by insurer only in the case Article 13 point 3 applies\r\nY/N",
+            "type": "string",
+            "enum": [
+              "Y",
+              "N"
+            ]
+          },
+          "08200_UCITS_Performance_Fees": {
+            "description": "See UCITS definition as a % of NAV of the portfolio, the funds or the share class / per annum\r\nConditional on 08190 set to Y\r\nUsed by insurer only in the case Article 13 point 3 applies\r\nfloating decimal. 100%=1, 5%= 0,05",
+            "type": "number"
+          }
+        },
+        "required": [
+          "00001_EPT_Version",
+          "00005_File_Generation_Date_And_Time",
+          "00006_EPT_Data_Reporting_Narratives",
+          "00007_EPT_Data_Reporting_Costs",
+          "00008_EPT_Data_Reporting_Additional_Requirements_German_MOPs",
+          "00009_EPT_Additional_Information_Structured_Products",
+          "00010_Portfolio_Manufacturer_Name",
+          "00015_Portfolio_Manufacturer_Group_Name",
+          "00030_Portfolio_Identifying_Data",
+          "00040_Type_Of_Identification_Code_For_The_Fund_Share_Or_Portfolio",
+          "00050_Portfolio_Name",
+          "00060_Portfolio_Or_Share_Class_Currency",
+          "00070_PRIIPs_KID_Publication_Date",
+          "00080_Portfolio_PRIIPs_Category",
+          "00110_Is_An_Autocallable_Product",
+          "01080_Existing_Credit_Risk",
+          "01090_SRI",
+          "01095_IS_SRI_Adjusted",
+          "01100_MRM",
+          "01110_CRM",
+          "01120_Recommended_Holding_Period",
+          "01125_Has_A_Contractual_Maturity_Date",
+          "01140_Liquidity_Risk",
+          "02030_Portfolio_Return_Unfavourable_Scenario_RHP_Or_First_Call_Date",
+          "02032_Autocall_Applied_Unfavourable_Scenario",
+          "02060_Portfolio_Return_Moderate_Scenario_RHP_Or_First_Call_Date",
+          "02062_Autocall_Applied_Moderate_Scenario",
+          "02090_Portfolio_Return_Favourable_Scenario_RHP_Or_First_Call_Date",
+          "02092_Autocall_Applied_Favourable_Scenario",
+          "02120_Portfolio_Return_Stress_Scenario_RHP_Or_First_Call_Date",
+          "02122_Autocall_Applied_Stress_Scenario",
+          "02185_Portfolio_Past_Performance_Disclosure_Required",
+          "02220_Reference_Invested_Amount",
+          "03010_One_Off_Cost_Portfolio_Entry_Cost",
+          "03015_One_Off_Cost_Portfolio_Entry_Cost_Acquired",
+          "03020_One_Off_Costs_Portfolio_Exit_Cost_At_RHP",
+          "03050_One_Off_Costs_Portfolio_Sliding_Exit_Cost_Indicator",
+          "03060_Ongoing_Costs_Management_Fees_And_Other_Administrative_Or_Operating_Costs",
+          "03080_Ongoing_Costs_Portfolio_Transaction_Costs",
+          "03090_Existing_Incidental_Costs_Portfolio",
+          "04020_Comprehension_Alert_Portfolio",
+          "04030_Intended_Target_Market_Retail_Investor_Portfolio",
+          "04040_Investment_Objective_Portfolio",
+          "04070_Type_Of_Underlying_Investment_Option",
+          "04080_Capital_Guarantee",
+          "04130_One_Off_Cost_Portfolio_Exit_Cost_Description",
+          "04140_Ongoing_Costs_Portfolio_Management_Costs_Description",
+          "04150_Do_Costs_Depend_On_Invested_Amount"
+        ],
+        "additionalProperties": false
+      }
+    }
+  }
+}

@@ -1,0 +1,27 @@
+{
+  "cSpell.words": [
+    "Autocall",
+    "Autocallable",
+    "datetime",
+    "Favourable",
+    "findatex",
+    "KIID",
+    "PRIIP",
+    "Priips",
+    "SRRI",
+    "synchronised",
+    "UCITS",
+    "UKPRIIP",
+    "Unfavourable"
+  ],
+  "editor.formatOnSave": true,
+  "json.schemas": [
+    {
+      "fileMatch": ["findatex-ept*.json"],
+      "url": "./schemas/ept.schema.json"
+    }
+  ],
+  "yaml.schemas": {
+    "schemas/ept.schema.json": ["findatex-ept*.yaml"]
+  }
+}
