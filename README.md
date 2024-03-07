@@ -2,7 +2,8 @@
 
 Note: findatex-schemas is not in any way affiliated with findatex.eu
 
-Excel files are neither human nor machine friendly. This project tries convert the excel description of EPT format to a JSON schema, for validating YAML files.
+Excel files are neither human nor machine friendly. This project tries convert the excel description of the EPT format to a JSON schema.
+The data can then be written in YAML (with editor validation) and converted to .xlsx file afterwards.
 
 ## JSON schemas for [https://findatex.eu](https://findatex.eu) formats
 
@@ -48,3 +49,7 @@ npx ts-node scripts/eptExcel2yaml.ts examples/findatex-ept-captor-2023-12-29.xls
 npx ts-node scripts/eptYaml2excel.ts findatex-ept-captor-2023-12-29.yaml
 npx ts-node scripts/validateEpt.ts findatex-ept-captor-2023-12-29.yaml
 ```
+
+## Contributions
+
+Feel free to report bugs and submit pull requests
