@@ -54,9 +54,9 @@ exposes executables to convert .xslx files to .yaml and back again.
 for example:
 
 ```bash
-eptExcel2yaml.ts examples/findatex-ept-captor-2023-12-29.xlsx
-eptYaml2excel.ts findatex-ept-captor-2023-12-29.yaml
-eptValidate.ts findatex-ept-captor-2023-12-29.yaml
+eptExcel2yaml examples/findatex-ept-captor-2023-12-29.xlsx
+eptYaml2excel findatex-ept-captor-2023-12-29.yaml
+eptValidate findatex-ept-captor-2023-12-29.yaml
 ```
 
 ## Contributions
