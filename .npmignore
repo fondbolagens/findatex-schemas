@@ -1,0 +1,12 @@
+scripts
+examples
+/*.xlsx
+/*.yaml
+json
+node_modules
+original
+package-lock.json
+scripts
+/tsconfig.json
+/.vscode/settings.json
+/.nvmrc
