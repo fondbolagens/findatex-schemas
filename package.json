@@ -3,12 +3,12 @@
   "private": false,
   "version": "0.3.0",
   "author": "Captor Fund Management AB",
-  "description": "findatex JSON Schema for EPT, EMP, EET and TPT",
+  "description": "findatex JSON Schema for EPT, EMT, EET and TPT",
   "keywords": [
     "findatex",
     "JSON Schema",
     "EPT",
-    "EMP",
+    "EMT",
     "EET",
     "TPT"
   ],

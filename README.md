@@ -11,7 +11,7 @@ The data can then be written in YAML (with editor validation) and converted to .
 
 - [ept.schema.json](/schemas/ept.schema.json) corresponds to [EPT_V2.1_Final.xlsx](https://findatex.eu/mediaitem/d6a4e027-ee5c-4b61-a8e0-e6f147f5090f/EPT_V2.1_Final.xlsx)
 - TPT not done yet
-- EMP not done yet
+- EMT not done yet
 - EET not done yet
 
 ## installation
