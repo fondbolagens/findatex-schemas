@@ -14,12 +14,18 @@ The data can then be written in YAML (with editor validation) and converted to .
 - EMP not done yet
 - EET not done yet
 
+## installation
+
+```bash
+npm install -g findatex-schemas
+```
+
 ## validation
 
 ### command line
 
 ```bash
-npx ts-node scripts/eptValidate.ts findatex-ept-captor-2023-12-29.yaml
+eptValidate findatex-ept-captor-2023-12-29.yaml
 ```
 
 ### vscode
@@ -42,14 +48,15 @@ In vscode you can add something like this to .vscode/settings.json and install [
 
 ## executables
 
-In addition to [ept.schema.json](/schemas/ept.schema.json) findatex-schemas exposes executables to convert .xslx files to .yaml and back again.
+In addition to [ept.schema.json](https://github.com/CaptorAB/findatex-schemas/blob/master/schemas/ept.schema.json) findatex-schemas
+exposes executables to convert .xslx files to .yaml and back again.
 
 for example:
 
 ```bash
-npx ts-node scripts/eptExcel2yaml.ts examples/findatex-ept-captor-2023-12-29.xlsx
-npx ts-node scripts/eptYaml2excel.ts findatex-ept-captor-2023-12-29.yaml
-npx ts-node scripts/eptValidate.ts findatex-ept-captor-2023-12-29.yaml
+eptExcel2yaml.ts examples/findatex-ept-captor-2023-12-29.xlsx
+eptYaml2excel.ts findatex-ept-captor-2023-12-29.yaml
+eptValidate.ts findatex-ept-captor-2023-12-29.yaml
 ```
 
 ## Contributions
