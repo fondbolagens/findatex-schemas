@@ -1,7 +1,7 @@
 {
   "name": "findatex-schemas",
   "private": false,
-  "version": "0.3.4",
+  "version": "0.3.5",
   "author": "Captor Fund Management AB",
   "description": "findatex JSON Schema for EPT, EMT, EET and TPT",
   "keywords": [
@@ -20,14 +20,14 @@
     "ajv-formats": "^2.1.1",
     "commander": "^11",
     "convert-excel-to-json": "^1",
-    "currency-codes": "^2",
-    "ts-node": "^10",
     "xlsx": "^0.18",
     "yaml": "^2"
   },
   "devDependencies": {
     "@types/json-schema": "^7",
-    "@types/node": "^20"
+    "@types/node": "^20",
+    "ts-node": "^10",
+    "currency-codes": "^2"
   },
   "repository": {
     "type": "git",
