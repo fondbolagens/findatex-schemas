@@ -10,3 +10,4 @@ scripts
 /tsconfig.json
 /.vscode/settings.json
 /.nvmrc
+/*.tgz
