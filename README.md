@@ -1,3 +1,5 @@
+[![npm version](https://badge.fury.io/js/findatex-schemas.svg)](https://badge.fury.io/js/findatex-schemas)
+
 # findatex-schemas
 
 Note: findatex-schemas is not in any way affiliated with findatex.eu
