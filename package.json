@@ -1,7 +1,7 @@
 {
   "name": "findatex-schemas",
   "private": false,
-  "version": "0.1.0",
+  "version": "0.2.0",
   "author": "Captor Fund Management AB",
   "description": "findatex JSON Schema for EPT, EMP, EET and TPT",
   "keywords": [

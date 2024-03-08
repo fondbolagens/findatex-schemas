@@ -1,3 +1,4 @@
+#!/usr/bin/env node
 // Copyright (c) 2024 Captor Fund Management AB.
 // see LICENSE file
 
