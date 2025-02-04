@@ -37,11 +37,13 @@ In vscode you can add something like this to .vscode/settings.json and install [
   "json.schemas": [
     {
       "fileMatch": ["findatex-ept*.json"],
-      "url": "./schemas/ept.schema.json"
+      "url": "https://raw.githubusercontent.com/CaptorAB/findatex-schemas/refs/heads/master/schemas/ept.schema.json"
     }
   ],
   "yaml.schemas": {
-    "schemas/ept.schema.json": ["findatex-ept*.yaml"]
+    "https://raw.githubusercontent.com/CaptorAB/findatex-schemas/refs/heads/master/schemas/ept.schema.json": [
+      "findatex-ept*.yaml"
+    ]
   }
 }
 ```
