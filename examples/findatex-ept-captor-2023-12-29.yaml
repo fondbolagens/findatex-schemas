@@ -1,7 +1,7 @@
 - 00001_EPT_Version: V21
   00002_EPT_Producer_Name: Captor Fund Management AB
   00004_EPT_Producer_Email: operations@captor.se
-  00005_File_Generation_Date_And_Time: '2024-02-23T13:42:48.235711Z'
+  00005_File_Generation_Date_And_Time: "2024-02-23T13:42:48.235711Z"
   00006_EPT_Data_Reporting_Narratives: N
   00007_EPT_Data_Reporting_Costs: Y
   00008_EPT_Data_Reporting_Additional_Requirements_German_MOPs: N
@@ -15,7 +15,7 @@
   00040_Type_Of_Identification_Code_For_The_Fund_Share_Or_Portfolio: 1
   00050_Portfolio_Name: Captor Dahlia Green Bond D
   00060_Portfolio_Or_Share_Class_Currency: EUR
-  00070_PRIIPs_KID_Publication_Date: '2024-02-16'
+  00070_PRIIPs_KID_Publication_Date: "2024-02-16"
   00075_PRIIPs_KID_Web_Address: https://public.media/captor.se/kid/Captor_Dahlia_Green_Bond_D.html
   00080_Portfolio_PRIIPs_Category: 2
   00090_Fund_CIC_Code: XL42
@@ -71,7 +71,7 @@
 - 00001_EPT_Version: V21
   00002_EPT_Producer_Name: Captor Fund Management AB
   00004_EPT_Producer_Email: operations@captor.se
-  00005_File_Generation_Date_And_Time: '2024-02-23T13:42:48.235711Z'
+  00005_File_Generation_Date_And_Time: "2024-02-23T13:42:48.235711Z"
   00006_EPT_Data_Reporting_Narratives: N
   00007_EPT_Data_Reporting_Costs: Y
   00008_EPT_Data_Reporting_Additional_Requirements_German_MOPs: N
@@ -85,7 +85,7 @@
   00040_Type_Of_Identification_Code_For_The_Fund_Share_Or_Portfolio: 1
   00050_Portfolio_Name: Captor Dahlia Green Bond C
   00060_Portfolio_Or_Share_Class_Currency: SEK
-  00070_PRIIPs_KID_Publication_Date: '2024-02-16'
+  00070_PRIIPs_KID_Publication_Date: "2024-02-16"
   00075_PRIIPs_KID_Web_Address: https://public.media/captor.se/kid/Captor_Dahlia_Green_Bond_C.html
   00080_Portfolio_PRIIPs_Category: 2
   00090_Fund_CIC_Code: XL42
@@ -141,7 +141,7 @@
 - 00001_EPT_Version: V21
   00002_EPT_Producer_Name: Captor Fund Management AB
   00004_EPT_Producer_Email: operations@captor.se
-  00005_File_Generation_Date_And_Time: '2024-02-23T13:42:48.235711Z'
+  00005_File_Generation_Date_And_Time: "2024-02-23T13:42:48.235711Z"
   00006_EPT_Data_Reporting_Narratives: N
   00007_EPT_Data_Reporting_Costs: Y
   00008_EPT_Data_Reporting_Additional_Requirements_German_MOPs: N
@@ -155,7 +155,7 @@
   00040_Type_Of_Identification_Code_For_The_Fund_Share_Or_Portfolio: 1
   00050_Portfolio_Name: Captor Dahlia Green Bond B
   00060_Portfolio_Or_Share_Class_Currency: SEK
-  00070_PRIIPs_KID_Publication_Date: '2024-02-16'
+  00070_PRIIPs_KID_Publication_Date: "2024-02-16"
   00075_PRIIPs_KID_Web_Address: https://public.media/captor.se/kid/Captor_Dahlia_Green_Bond_B.html
   00080_Portfolio_PRIIPs_Category: 2
   00090_Fund_CIC_Code: XL42
@@ -211,7 +211,7 @@
 - 00001_EPT_Version: V21
   00002_EPT_Producer_Name: Captor Fund Management AB
   00004_EPT_Producer_Email: operations@captor.se
-  00005_File_Generation_Date_And_Time: '2024-02-23T13:42:48.235711Z'
+  00005_File_Generation_Date_And_Time: "2024-02-23T13:42:48.235711Z"
   00006_EPT_Data_Reporting_Narratives: N
   00007_EPT_Data_Reporting_Costs: Y
   00008_EPT_Data_Reporting_Additional_Requirements_German_MOPs: N
@@ -225,7 +225,7 @@
   00040_Type_Of_Identification_Code_For_The_Fund_Share_Or_Portfolio: 1
   00050_Portfolio_Name: Captor Dahlia Green Bond A
   00060_Portfolio_Or_Share_Class_Currency: SEK
-  00070_PRIIPs_KID_Publication_Date: '2024-02-16'
+  00070_PRIIPs_KID_Publication_Date: "2024-02-16"
   00075_PRIIPs_KID_Web_Address: https://public.media/captor.se/kid/Captor_Dahlia_Green_Bond_A.html
   00080_Portfolio_PRIIPs_Category: 2
   00090_Fund_CIC_Code: XL42
@@ -281,7 +281,7 @@
 - 00001_EPT_Version: V21
   00002_EPT_Producer_Name: Captor Fund Management AB
   00004_EPT_Producer_Email: operations@captor.se
-  00005_File_Generation_Date_And_Time: '2024-02-23T13:42:48.235711Z'
+  00005_File_Generation_Date_And_Time: "2024-02-23T13:42:48.235711Z"
   00006_EPT_Data_Reporting_Narratives: N
   00007_EPT_Data_Reporting_Costs: Y
   00008_EPT_Data_Reporting_Additional_Requirements_German_MOPs: N
@@ -295,7 +295,7 @@
   00040_Type_Of_Identification_Code_For_The_Fund_Share_Or_Portfolio: 1
   00050_Portfolio_Name: Captor Scilla Global Equity K
   00060_Portfolio_Or_Share_Class_Currency: SEK
-  00070_PRIIPs_KID_Publication_Date: '2024-02-16'
+  00070_PRIIPs_KID_Publication_Date: "2024-02-16"
   00075_PRIIPs_KID_Web_Address: https://public.media/captor.se/kid/Captor_Scilla_Global_Equity_K.html
   00080_Portfolio_PRIIPs_Category: 2
   00090_Fund_CIC_Code: XL41
@@ -351,7 +351,7 @@
 - 00001_EPT_Version: V21
   00002_EPT_Producer_Name: Captor Fund Management AB
   00004_EPT_Producer_Email: operations@captor.se
-  00005_File_Generation_Date_And_Time: '2024-02-23T13:42:48.235711Z'
+  00005_File_Generation_Date_And_Time: "2024-02-23T13:42:48.235711Z"
   00006_EPT_Data_Reporting_Narratives: N
   00007_EPT_Data_Reporting_Costs: Y
   00008_EPT_Data_Reporting_Additional_Requirements_German_MOPs: N
@@ -365,7 +365,7 @@
   00040_Type_Of_Identification_Code_For_The_Fund_Share_Or_Portfolio: 1
   00050_Portfolio_Name: Captor Scilla Global Equity B
   00060_Portfolio_Or_Share_Class_Currency: SEK
-  00070_PRIIPs_KID_Publication_Date: '2024-02-16'
+  00070_PRIIPs_KID_Publication_Date: "2024-02-16"
   00075_PRIIPs_KID_Web_Address: https://public.media/captor.se/kid/Captor_Scilla_Global_Equity_B.html
   00080_Portfolio_PRIIPs_Category: 2
   00090_Fund_CIC_Code: XL41
@@ -421,7 +421,7 @@
 - 00001_EPT_Version: V21
   00002_EPT_Producer_Name: Captor Fund Management AB
   00004_EPT_Producer_Email: operations@captor.se
-  00005_File_Generation_Date_And_Time: '2024-02-23T13:42:48.235711Z'
+  00005_File_Generation_Date_And_Time: "2024-02-23T13:42:48.235711Z"
   00006_EPT_Data_Reporting_Narratives: N
   00007_EPT_Data_Reporting_Costs: Y
   00008_EPT_Data_Reporting_Additional_Requirements_German_MOPs: N
@@ -435,7 +435,7 @@
   00040_Type_Of_Identification_Code_For_The_Fund_Share_Or_Portfolio: 1
   00050_Portfolio_Name: Captor Scilla Global Equity C
   00060_Portfolio_Or_Share_Class_Currency: SEK
-  00070_PRIIPs_KID_Publication_Date: '2024-02-16'
+  00070_PRIIPs_KID_Publication_Date: "2024-02-16"
   00075_PRIIPs_KID_Web_Address: https://public.media/captor.se/kid/Captor_Scilla_Global_Equity_C.html
   00080_Portfolio_PRIIPs_Category: 2
   00090_Fund_CIC_Code: XL41
@@ -491,7 +491,7 @@
 - 00001_EPT_Version: V21
   00002_EPT_Producer_Name: Captor Fund Management AB
   00004_EPT_Producer_Email: operations@captor.se
-  00005_File_Generation_Date_And_Time: '2024-02-23T13:42:48.235711Z'
+  00005_File_Generation_Date_And_Time: "2024-02-23T13:42:48.235711Z"
   00006_EPT_Data_Reporting_Narratives: N
   00007_EPT_Data_Reporting_Costs: Y
   00008_EPT_Data_Reporting_Additional_Requirements_German_MOPs: N
@@ -505,7 +505,7 @@
   00040_Type_Of_Identification_Code_For_The_Fund_Share_Or_Portfolio: 1
   00050_Portfolio_Name: Captor Iris Bond C
   00060_Portfolio_Or_Share_Class_Currency: SEK
-  00070_PRIIPs_KID_Publication_Date: '2024-02-16'
+  00070_PRIIPs_KID_Publication_Date: "2024-02-16"
   00075_PRIIPs_KID_Web_Address: https://public.media/captor.se/kid/Captor_Iris_Bond_C.html
   00080_Portfolio_PRIIPs_Category: 2
   00090_Fund_CIC_Code: XL42
@@ -561,7 +561,7 @@
 - 00001_EPT_Version: V21
   00002_EPT_Producer_Name: Captor Fund Management AB
   00004_EPT_Producer_Email: operations@captor.se
-  00005_File_Generation_Date_And_Time: '2024-02-23T13:42:48.235711Z'
+  00005_File_Generation_Date_And_Time: "2024-02-23T13:42:48.235711Z"
   00006_EPT_Data_Reporting_Narratives: N
   00007_EPT_Data_Reporting_Costs: Y
   00008_EPT_Data_Reporting_Additional_Requirements_German_MOPs: N
@@ -575,7 +575,7 @@
   00040_Type_Of_Identification_Code_For_The_Fund_Share_Or_Portfolio: 1
   00050_Portfolio_Name: Captor Iris Bond B
   00060_Portfolio_Or_Share_Class_Currency: SEK
-  00070_PRIIPs_KID_Publication_Date: '2024-02-16'
+  00070_PRIIPs_KID_Publication_Date: "2024-02-16"
   00075_PRIIPs_KID_Web_Address: https://public.media/captor.se/kid/Captor_Iris_Bond_B.html
   00080_Portfolio_PRIIPs_Category: 2
   00090_Fund_CIC_Code: XL42
@@ -631,7 +631,7 @@
 - 00001_EPT_Version: V21
   00002_EPT_Producer_Name: Captor Fund Management AB
   00004_EPT_Producer_Email: operations@captor.se
-  00005_File_Generation_Date_And_Time: '2024-02-23T13:42:48.235711Z'
+  00005_File_Generation_Date_And_Time: "2024-02-23T13:42:48.235711Z"
   00006_EPT_Data_Reporting_Narratives: N
   00007_EPT_Data_Reporting_Costs: Y
   00008_EPT_Data_Reporting_Additional_Requirements_German_MOPs: N
@@ -645,7 +645,7 @@
   00040_Type_Of_Identification_Code_For_The_Fund_Share_Or_Portfolio: 1
   00050_Portfolio_Name: Captor Iris Bond A
   00060_Portfolio_Or_Share_Class_Currency: SEK
-  00070_PRIIPs_KID_Publication_Date: '2024-02-16'
+  00070_PRIIPs_KID_Publication_Date: "2024-02-16"
   00075_PRIIPs_KID_Web_Address: https://public.media/captor.se/kid/Captor_Iris_Bond_A.html
   00080_Portfolio_PRIIPs_Category: 2
   00090_Fund_CIC_Code: XL42
@@ -701,7 +701,7 @@
 - 00001_EPT_Version: V21
   00002_EPT_Producer_Name: Captor Fund Management AB
   00004_EPT_Producer_Email: operations@captor.se
-  00005_File_Generation_Date_And_Time: '2024-02-23T13:42:48.235711Z'
+  00005_File_Generation_Date_And_Time: "2024-02-23T13:42:48.235711Z"
   00006_EPT_Data_Reporting_Narratives: N
   00007_EPT_Data_Reporting_Costs: Y
   00008_EPT_Data_Reporting_Additional_Requirements_German_MOPs: N
@@ -715,7 +715,7 @@
   00040_Type_Of_Identification_Code_For_The_Fund_Share_Or_Portfolio: 1
   00050_Portfolio_Name: Captor Iris Bond D
   00060_Portfolio_Or_Share_Class_Currency: SEK
-  00070_PRIIPs_KID_Publication_Date: '2024-02-16'
+  00070_PRIIPs_KID_Publication_Date: "2024-02-16"
   00075_PRIIPs_KID_Web_Address: https://public.media/captor.se/kid/Captor_Iris_Bond_D.html
   00080_Portfolio_PRIIPs_Category: 2
   00090_Fund_CIC_Code: XL42
@@ -771,7 +771,7 @@
 - 00001_EPT_Version: V21
   00002_EPT_Producer_Name: Captor Fund Management AB
   00004_EPT_Producer_Email: operations@captor.se
-  00005_File_Generation_Date_And_Time: '2024-02-23T13:42:48.235711Z'
+  00005_File_Generation_Date_And_Time: "2024-02-23T13:42:48.235711Z"
   00006_EPT_Data_Reporting_Narratives: N
   00007_EPT_Data_Reporting_Costs: Y
   00008_EPT_Data_Reporting_Additional_Requirements_German_MOPs: N
@@ -785,7 +785,7 @@
   00040_Type_Of_Identification_Code_For_The_Fund_Share_Or_Portfolio: 1
   00050_Portfolio_Name: Captor Aster Global Credit A
   00060_Portfolio_Or_Share_Class_Currency: SEK
-  00070_PRIIPs_KID_Publication_Date: '2024-02-16'
+  00070_PRIIPs_KID_Publication_Date: "2024-02-16"
   00075_PRIIPs_KID_Web_Address: https://public.media/captor.se/kid/Captor_Aster_Global_Credit_A.html
   00080_Portfolio_PRIIPs_Category: 2
   00090_Fund_CIC_Code: XL42
@@ -841,7 +841,7 @@
 - 00001_EPT_Version: V21
   00002_EPT_Producer_Name: Captor Fund Management AB
   00004_EPT_Producer_Email: operations@captor.se
-  00005_File_Generation_Date_And_Time: '2024-02-23T13:42:48.235711Z'
+  00005_File_Generation_Date_And_Time: "2024-02-23T13:42:48.235711Z"
   00006_EPT_Data_Reporting_Narratives: N
   00007_EPT_Data_Reporting_Costs: Y
   00008_EPT_Data_Reporting_Additional_Requirements_German_MOPs: N
@@ -855,7 +855,7 @@
   00040_Type_Of_Identification_Code_For_The_Fund_Share_Or_Portfolio: 1
   00050_Portfolio_Name: Captor Aster Global Credit C
   00060_Portfolio_Or_Share_Class_Currency: SEK
-  00070_PRIIPs_KID_Publication_Date: '2024-02-16'
+  00070_PRIIPs_KID_Publication_Date: "2024-02-16"
   00075_PRIIPs_KID_Web_Address: https://public.media/captor.se/kid/Captor_Aster_Global_Credit_C.html
   00080_Portfolio_PRIIPs_Category: 2
   00090_Fund_CIC_Code: XL42
@@ -911,7 +911,7 @@
 - 00001_EPT_Version: V21
   00002_EPT_Producer_Name: Captor Fund Management AB
   00004_EPT_Producer_Email: operations@captor.se
-  00005_File_Generation_Date_And_Time: '2024-02-23T13:42:48.235711Z'
+  00005_File_Generation_Date_And_Time: "2024-02-23T13:42:48.235711Z"
   00006_EPT_Data_Reporting_Narratives: N
   00007_EPT_Data_Reporting_Costs: Y
   00008_EPT_Data_Reporting_Additional_Requirements_German_MOPs: N
@@ -925,7 +925,7 @@
   00040_Type_Of_Identification_Code_For_The_Fund_Share_Or_Portfolio: 1
   00050_Portfolio_Name: Captor Aster Global High Yield A
   00060_Portfolio_Or_Share_Class_Currency: SEK
-  00070_PRIIPs_KID_Publication_Date: '2024-02-16'
+  00070_PRIIPs_KID_Publication_Date: "2024-02-16"
   00075_PRIIPs_KID_Web_Address: https://public.media/captor.se/kid/Captor_Aster_Global_High_Yield_A.html
   00080_Portfolio_PRIIPs_Category: 2
   00090_Fund_CIC_Code: XL42
@@ -981,7 +981,7 @@
 - 00001_EPT_Version: V21
   00002_EPT_Producer_Name: Captor Fund Management AB
   00004_EPT_Producer_Email: operations@captor.se
-  00005_File_Generation_Date_And_Time: '2024-02-23T13:42:48.235711Z'
+  00005_File_Generation_Date_And_Time: "2024-02-23T13:42:48.235711Z"
   00006_EPT_Data_Reporting_Narratives: N
   00007_EPT_Data_Reporting_Costs: Y
   00008_EPT_Data_Reporting_Additional_Requirements_German_MOPs: N
@@ -995,7 +995,7 @@
   00040_Type_Of_Identification_Code_For_The_Fund_Share_Or_Portfolio: 1
   00050_Portfolio_Name: Captor Aster Global High Yield C
   00060_Portfolio_Or_Share_Class_Currency: SEK
-  00070_PRIIPs_KID_Publication_Date: '2024-02-16'
+  00070_PRIIPs_KID_Publication_Date: "2024-02-16"
   00075_PRIIPs_KID_Web_Address: https://public.media/captor.se/kid/Captor_Aster_Global_High_Yield_C.html
   00080_Portfolio_PRIIPs_Category: 2
   00090_Fund_CIC_Code: XL42
@@ -1051,7 +1051,7 @@
 - 00001_EPT_Version: V21
   00002_EPT_Producer_Name: Captor Fund Management AB
   00004_EPT_Producer_Email: operations@captor.se
-  00005_File_Generation_Date_And_Time: '2024-02-23T13:42:48.235711Z'
+  00005_File_Generation_Date_And_Time: "2024-02-23T13:42:48.235711Z"
   00006_EPT_Data_Reporting_Narratives: N
   00007_EPT_Data_Reporting_Costs: Y
   00008_EPT_Data_Reporting_Additional_Requirements_German_MOPs: N
@@ -1065,7 +1065,7 @@
   00040_Type_Of_Identification_Code_For_The_Fund_Share_Or_Portfolio: 1
   00050_Portfolio_Name: Captor Aster Global Credit Short Term B
   00060_Portfolio_Or_Share_Class_Currency: SEK
-  00070_PRIIPs_KID_Publication_Date: '2024-02-16'
+  00070_PRIIPs_KID_Publication_Date: "2024-02-16"
   00075_PRIIPs_KID_Web_Address: https://public.media/captor.se/kid/Captor_Aster_Global_Credit_Short_Term_B.html
   00080_Portfolio_PRIIPs_Category: 2
   00090_Fund_CIC_Code: XL42
@@ -1121,7 +1121,7 @@
 - 00001_EPT_Version: V21
   00002_EPT_Producer_Name: Captor Fund Management AB
   00004_EPT_Producer_Email: operations@captor.se
-  00005_File_Generation_Date_And_Time: '2024-02-23T13:42:48.235711Z'
+  00005_File_Generation_Date_And_Time: "2024-02-23T13:42:48.235711Z"
   00006_EPT_Data_Reporting_Narratives: N
   00007_EPT_Data_Reporting_Costs: Y
   00008_EPT_Data_Reporting_Additional_Requirements_German_MOPs: N
@@ -1135,7 +1135,7 @@
   00040_Type_Of_Identification_Code_For_The_Fund_Share_Or_Portfolio: 1
   00050_Portfolio_Name: Captor Aster Global Credit Short Term A
   00060_Portfolio_Or_Share_Class_Currency: SEK
-  00070_PRIIPs_KID_Publication_Date: '2024-02-16'
+  00070_PRIIPs_KID_Publication_Date: "2024-02-16"
   00075_PRIIPs_KID_Web_Address: https://public.media/captor.se/kid/Captor_Aster_Global_Credit_Short_Term_A.html
   00080_Portfolio_PRIIPs_Category: 2
   00090_Fund_CIC_Code: XL42
@@ -1191,7 +1191,7 @@
 - 00001_EPT_Version: V21
   00002_EPT_Producer_Name: Captor Fund Management AB
   00004_EPT_Producer_Email: operations@captor.se
-  00005_File_Generation_Date_And_Time: '2024-02-23T13:42:48.235711Z'
+  00005_File_Generation_Date_And_Time: "2024-02-23T13:42:48.235711Z"
   00006_EPT_Data_Reporting_Narratives: N
   00007_EPT_Data_Reporting_Costs: Y
   00008_EPT_Data_Reporting_Additional_Requirements_German_MOPs: N
@@ -1205,7 +1205,7 @@
   00040_Type_Of_Identification_Code_For_The_Fund_Share_Or_Portfolio: 1
   00050_Portfolio_Name: Captor Aster Global Credit Short Term C
   00060_Portfolio_Or_Share_Class_Currency: SEK
-  00070_PRIIPs_KID_Publication_Date: '2024-02-16'
+  00070_PRIIPs_KID_Publication_Date: "2024-02-16"
   00075_PRIIPs_KID_Web_Address: https://public.media/captor.se/kid/Captor_Aster_Global_Credit_Short_Term_C.html
   00080_Portfolio_PRIIPs_Category: 2
   00090_Fund_CIC_Code: XL42
@@ -1261,7 +1261,7 @@
 - 00001_EPT_Version: V21
   00002_EPT_Producer_Name: Captor Fund Management AB
   00004_EPT_Producer_Email: operations@captor.se
-  00005_File_Generation_Date_And_Time: '2024-02-23T13:42:48.235711Z'
+  00005_File_Generation_Date_And_Time: "2024-02-23T13:42:48.235711Z"
   00006_EPT_Data_Reporting_Narratives: N
   00007_EPT_Data_Reporting_Costs: Y
   00008_EPT_Data_Reporting_Additional_Requirements_German_MOPs: N
@@ -1275,7 +1275,7 @@
   00040_Type_Of_Identification_Code_For_The_Fund_Share_Or_Portfolio: 1
   00050_Portfolio_Name: Captor Global Fixed Income A
   00060_Portfolio_Or_Share_Class_Currency: SEK
-  00070_PRIIPs_KID_Publication_Date: '2024-02-16'
+  00070_PRIIPs_KID_Publication_Date: "2024-02-16"
   00075_PRIIPs_KID_Web_Address: https://public.media/captor.se/kid/Captor_Global_Fixed_Income_A.html
   00080_Portfolio_PRIIPs_Category: 2
   00090_Fund_CIC_Code: XL42
@@ -1331,7 +1331,7 @@
 - 00001_EPT_Version: V21
   00002_EPT_Producer_Name: Captor Fund Management AB
   00004_EPT_Producer_Email: operations@captor.se
-  00005_File_Generation_Date_And_Time: '2024-02-23T13:42:48.235711Z'
+  00005_File_Generation_Date_And_Time: "2024-02-23T13:42:48.235711Z"
   00006_EPT_Data_Reporting_Narratives: N
   00007_EPT_Data_Reporting_Costs: Y
   00008_EPT_Data_Reporting_Additional_Requirements_German_MOPs: N
@@ -1345,7 +1345,7 @@
   00040_Type_Of_Identification_Code_For_The_Fund_Share_Or_Portfolio: 1
   00050_Portfolio_Name: Captor Perenne Short Term Bond B
   00060_Portfolio_Or_Share_Class_Currency: USD
-  00070_PRIIPs_KID_Publication_Date: '2024-02-16'
+  00070_PRIIPs_KID_Publication_Date: "2024-02-16"
   00075_PRIIPs_KID_Web_Address: https://public.media/captor.se/kid/Captor_Perenne_Short_Term_Bond_B.html
   00080_Portfolio_PRIIPs_Category: 2
   00090_Fund_CIC_Code: XL42
@@ -1401,7 +1401,7 @@
 - 00001_EPT_Version: V21
   00002_EPT_Producer_Name: Captor Fund Management AB
   00004_EPT_Producer_Email: operations@captor.se
-  00005_File_Generation_Date_And_Time: '2024-02-23T13:42:48.235711Z'
+  00005_File_Generation_Date_And_Time: "2024-02-23T13:42:48.235711Z"
   00006_EPT_Data_Reporting_Narratives: N
   00007_EPT_Data_Reporting_Costs: Y
   00008_EPT_Data_Reporting_Additional_Requirements_German_MOPs: N
@@ -1415,7 +1415,7 @@
   00040_Type_Of_Identification_Code_For_The_Fund_Share_Or_Portfolio: 1
   00050_Portfolio_Name: Captor Perenne Short Term Bond A
   00060_Portfolio_Or_Share_Class_Currency: SEK
-  00070_PRIIPs_KID_Publication_Date: '2024-02-16'
+  00070_PRIIPs_KID_Publication_Date: "2024-02-16"
   00075_PRIIPs_KID_Web_Address: https://public.media/captor.se/kid/Captor_Perenne_Short_Term_Bond_A.html
   00080_Portfolio_PRIIPs_Category: 2
   00090_Fund_CIC_Code: XL42
@@ -1471,7 +1471,7 @@
 - 00001_EPT_Version: V21
   00002_EPT_Producer_Name: Captor Fund Management AB
   00004_EPT_Producer_Email: operations@captor.se
-  00005_File_Generation_Date_And_Time: '2024-02-23T13:42:48.235711Z'
+  00005_File_Generation_Date_And_Time: "2024-02-23T13:42:48.235711Z"
   00006_EPT_Data_Reporting_Narratives: N
   00007_EPT_Data_Reporting_Costs: Y
   00008_EPT_Data_Reporting_Additional_Requirements_German_MOPs: N
@@ -1485,7 +1485,7 @@
   00040_Type_Of_Identification_Code_For_The_Fund_Share_Or_Portfolio: 1
   00050_Portfolio_Name: Captor Perenne Short Term Bond C
   00060_Portfolio_Or_Share_Class_Currency: SEK
-  00070_PRIIPs_KID_Publication_Date: '2024-02-16'
+  00070_PRIIPs_KID_Publication_Date: "2024-02-16"
   00075_PRIIPs_KID_Web_Address: https://public.media/captor.se/kid/Captor_Perenne_Short_Term_Bond_C.html
   00080_Portfolio_PRIIPs_Category: 2
   00090_Fund_CIC_Code: XL42
