@@ -10,7 +10,7 @@ The data can then be written in YAML (with editor validation) and converted to .
 ## JSON schemas for [https://findatex.eu](https://findatex.eu) formats
 
 - [ept.schema.json](/schemas/ept.schema.json) corresponds to [EPT_V2.1_Final.xlsx](https://findatex.eu/mediaitem/d6a4e027-ee5c-4b61-a8e0-e6f147f5090f/EPT_V2.1_Final.xlsx)
-- TPT not done yet
+- [tpt.schema.json](/schemas/tpt.schema.json) corresponds to [TPT_V6_20220314_final.xlsx](original/TPT_V6_20220314_final.xlsx)
 - EMT not done yet
 - EET not done yet
 
