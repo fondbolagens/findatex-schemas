@@ -40,7 +40,7 @@
   "bugs": {
     "url": "https://github.com/CaptorAB/findatex-schemas/issues"
   },
-  "license": "BSD-3-Clause",
+  "license": "MIT",
   "bin": {
     "eptExcel2yaml": "dist/eptExcel2yaml.js",
     "eptYaml2excel": "dist/eptYaml2excel.js",
