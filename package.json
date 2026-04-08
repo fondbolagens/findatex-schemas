@@ -1,7 +1,7 @@
 {
   "name": "findatex-schemas",
   "private": false,
-  "version": "0.4.1",
+  "version": "0.5.0",
   "author": "Captor Fund Management AB",
   "description": "findatex JSON Schema for EPT, EMT, EET and TPT",
   "keywords": [
@@ -35,11 +35,11 @@
   },
   "repository": {
     "type": "git",
-    "url": "git://github.com/CaptorAB/findatex-schemas.git"
+    "url": "git://github.com/fondbolagens/findatex-schemas.git"
   },
-  "homepage": "https://github.com/CaptorAB/findatex-schemas",
+  "homepage": "https://github.com/fondbolagens/findatex-schemas",
   "bugs": {
-    "url": "https://github.com/CaptorAB/findatex-schemas/issues"
+    "url": "https://github.com/fondbolagens/findatex-schemas/issues"
   },
   "license": "MIT",
   "bin": {
