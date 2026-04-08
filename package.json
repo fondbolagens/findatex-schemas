@@ -1,7 +1,7 @@
 {
   "name": "findatex-schemas",
   "private": false,
-  "version": "0.5.1",
+  "version": "0.5.2",
   "author": "Captor Fund Management AB",
   "description": "findatex JSON Schema for EPT, EMT, EET and TPT",
   "keywords": [
@@ -44,9 +44,9 @@
   },
   "license": "MIT",
   "bin": {
-    "eptExcel2yaml": "dist/eptExcel2yaml.js",
-    "eptYaml2excel": "dist/eptYaml2excel.js",
-    "eptValidate": "dist/eptValidate.js",
-    "tptValidate": "dist/tptValidate.js"
+    "eptExcel2yaml": "dist/scripts/eptExcel2yaml.js",
+    "eptYaml2excel": "dist/scripts/eptYaml2excel.js",
+    "eptValidate": "dist/scripts/eptValidate.js",
+    "tptValidate": "dist/scripts/tptValidate.js"
   }
 }
