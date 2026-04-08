@@ -1,5 +1,5 @@
 #!/usr/bin/env node
-// Copyright (c) 2024 Captor Fund Management AB.
+// Copyright (c) 2026 Captor Fund Management AB.
 // see LICENSE file
 
 import { program } from "commander";
@@ -8,16 +8,16 @@ import addFormats from "ajv-formats";
 import { parse } from "yaml";
 import { version } from "../package.json";
 import * as fs from "fs";
-import eptSchema from "../schemas/ept.schema.json";
+import schema from "../schemas/tpt.schema.json";
 
 const ajv = new Ajv({ allowUnionTypes: true });
 addFormats(ajv);
 ajv.addKeyword("components");
-const validateEpt = ajv.compile(eptSchema);
+const validate = ajv.compile(schema);
 
 program
   .version(version)
-  .argument("<files...>", "one or more ept yaml files")
+  .argument("<files...>", "one or more yaml files")
   .action((files: string[]) => {
     if (!files) {
       console.error("no file specified");
@@ -31,9 +31,9 @@ program
       const text = fs.readFileSync(filePath, "utf8");
       const data = parse(text);
 
-      const valid = validateEpt(data);
+      const valid = validate(data);
       if (!valid) {
-        console.error(JSON.stringify(validateEpt.errors, null, 2));
+        console.error(JSON.stringify(validate.errors, null, 2));
         process.exit(1);
       } else {
         console.log(filePath + " is valid");

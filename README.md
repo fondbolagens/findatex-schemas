@@ -59,6 +59,7 @@ for example:
 eptExcel2yaml examples/findatex-ept-captor-2023-12-29.xlsx
 eptYaml2excel findatex-ept-captor-2023-12-29.yaml
 eptValidate findatex-ept-captor-2023-12-29.yaml
+tptValidate tpt.yaml
 ```
 
 ## Contributions
